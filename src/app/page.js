@@ -13,7 +13,6 @@ export default function Home() {
       <HomeCover itineraries={allItineraries} />
       <Featured itineraries={allItineraries} />
       <LatestItinerary itineraries={allItineraries} />
-
     </main>
   );
 }
