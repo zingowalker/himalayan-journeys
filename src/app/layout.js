@@ -1,6 +1,7 @@
 import "./globals.css";
 import { cx } from "@/src/utils";
 import Header from "@/src/components/Header";
+import Footer from "@/src/components/Footer";
 
 import { Inter, Manrope } from "next/font/google";
 
@@ -17,7 +18,7 @@ const manrope = Manrope({
 });
 
 export const metadata = {
-  title: "Eco Himalayan Journeys",
+  title: "Himalayan Journeys",
   description: "Adventure tour company to Himalayas, based in Leh, India.",
 };
 
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

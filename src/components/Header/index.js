@@ -36,7 +36,7 @@ const Header = () => {
           <SunIcon />
         </button>
       </nav>
-      <div className="hidden sm:flex items-center">
+      {/* <div className="hidden sm:flex items-center">
         <a
           href="https://example.com"
           className="inline-block w-6 h-6 mr-4"
@@ -62,7 +62,7 @@ const Header = () => {
         >
           <DribbbleIcon />
         </a>
-      </div>
+      </div> */}
     </header>
   );
 };

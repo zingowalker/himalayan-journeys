@@ -5,7 +5,7 @@ import logoImg from "@/public/logo1.png";
 const Logo = () => {
   return (
     <Link href="/" className="flex items-center text-dark dark:text-light">
-      <div className=" w-12 md:w-16 rounded-full overflow-hidden border border-solid border-dark dark:border-gray  mr-2 md:mr-4">
+      <div className="w-12 md:w-16 rounded-full overflow-hidden border border-solid border-dark dark:border-gray  mr-2 md:mr-4 sm:items-center justify-center">
         <Image
           src={logoImg}
           alt="eco himalayan journeys"
@@ -14,7 +14,7 @@ const Logo = () => {
           priority
         />
       </div>
-      <span className="font-normal dark:font-semibold text-lg md:text-xl">
+      <span className="font-normal dark:font-semibold text-lg md:text-xl text-multicolor">
         Himalayan Journeys
       </span>
     </Link>
