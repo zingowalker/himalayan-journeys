@@ -2,32 +2,8 @@ import Logo from "../Header/Logo";
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-dark md:mt-8">
-      <div className="bg-amber py-6">
-        <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-          <div className="flex flex-col items-center justify-between gap-2 md:flex-row">
-            <div className="mb-3 text-center md:mb-0 md:text-left">
-              <span className="font-bold uppercase tracking-widest text-gray-100">
-                Newsletter
-              </span>
-              <p className="text-orange-200">Subscribe to our newsletter</p>
-            </div>
-
-            <form className="flex w-full gap-2 md:max-w-md">
-              <input
-                placeholder="Email"
-                className="w-full flex-1 rounded border border-white bg-orange-400 px-3 py-2 text-white placeholder-orange-100 outline-none ring-orange-300 transition duration-100 focus:ring"
-              />
-
-              <button className="inline-block rounded bg-white px-8 py-2 text-center text-sm font-semibold text-orange-500 outline-none ring-orange-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:text-indigo-600 md:text-base">
-                Send
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <div className="pt-12 lg:pt-16">
+    <footer className="text-light dark:text-dark md:mt-8">
+      <div className="pt-12 lg:pt-16 text-sm text-dark dark:text-light">
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="mb-16 grid grid-cols-2 gap-12 md:grid-cols-4 lg:grid-cols-6 lg:gap-8">
             <div className="col-span-full lg:col-span-2">
@@ -119,7 +95,7 @@ export default function Footer() {
 
             <div>
               <div className="mb-4 font-bold uppercase tracking-widest text-gray-800">
-                Products
+                Destination
               </div>
 
               <nav className="flex flex-col gap-4">
@@ -128,7 +104,7 @@ export default function Footer() {
                     href="#"
                     className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
                   >
-                    Overview
+                    Ladakh
                   </a>
                 </div>
 
@@ -137,7 +113,7 @@ export default function Footer() {
                     href="#"
                     className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
                   >
-                    Solutions
+                    Uttarkhand
                   </a>
                 </div>
 
@@ -146,7 +122,7 @@ export default function Footer() {
                     href="#"
                     className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
                   >
-                    Pricing
+                    Kerala
                   </a>
                 </div>
 
@@ -155,7 +131,7 @@ export default function Footer() {
                     href="#"
                     className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
                   >
-                    Customers
+                    Northeast
                   </a>
                 </div>
               </nav>
@@ -181,34 +157,24 @@ export default function Footer() {
                     href="#"
                     className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
                   >
-                    Investor Relations
-                  </a>
-                </div>
-
-                <div>
-                  <a
-                    href="#"
-                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
-                  >
-                    Jobs
-                  </a>
-                </div>
-
-                <div>
-                  <a
-                    href="#"
-                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
-                  >
-                    Press
-                  </a>
-                </div>
-
-                <div>
-                  <a
-                    href="#"
-                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
-                  >
                     Blog
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
+                  >
+                    What we do
+                  </a>
+                </div>
+
+                <div>
+                  <a
+                    href="#"
+                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
+                  >
+                    Why choose us
                   </a>
                 </div>
               </nav>
@@ -234,7 +200,7 @@ export default function Footer() {
                     href="#"
                     className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
                   >
-                    Documentation
+                    eamil@gmail.com
                   </a>
                 </div>
 
@@ -243,7 +209,7 @@ export default function Footer() {
                     href="#"
                     className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
                   >
-                    Chat
+                    chat
                   </a>
                 </div>
 
@@ -278,7 +244,7 @@ export default function Footer() {
                     href="#"
                     className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
                   >
-                    Privacy Policy
+                    Payment Policy
                   </a>
                 </div>
 
@@ -287,7 +253,7 @@ export default function Footer() {
                     href="#"
                     className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
                   >
-                    Cookie settings
+                    Cancellation Policy
                   </a>
                 </div>
               </nav>
@@ -295,7 +261,7 @@ export default function Footer() {
           </div>
 
           <div className="border-t py-8 text-center text-sm text-gray-400">
-            © 2023 - Present Flowrift. All rights reserved.
+            © 2023 - letsgo journeys. All rights reserved.
           </div>
         </div>
       </div>

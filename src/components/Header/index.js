@@ -22,7 +22,6 @@ const Header = () => {
   const toggle = () => {
     setClick(!click);
   };
-
   return (
     <header className="w-full p-4 px-5 sm:px-10 flex items-center justify-between">
       <Logo />
@@ -77,7 +76,11 @@ const Header = () => {
         <Link href="/" className="mr-2">
           Home
         </Link>
-        <Link href="/reviews" className="mx-2">
+        <Link
+          href="https://www.google.com/search?q=ecoindiajourneys%0D%0A%0D%0A&btnK=Google+Search&sca_esv=579484062&sxsrf=AM9HkKkwF5kM5lmChQjgXmqATTb7hG4QKw%3A1699120679242&source=hp&ei=J4ZGZej6DPacseMPpcuigA4&iflsig=AO6bgOgAAAAAZUaUN1hFp94i32Yej2JXoVuaFnEb_nNT#btnK=Google%20Search&lrd=0x38fdebc4481689d9:0x8865dd6bfab06f35,1"
+          target="_blank"
+          className="mx-2"
+        >
           Reviews
         </Link>
         <Link href="/contact" className="mx-2">
@@ -106,8 +109,12 @@ const Header = () => {
         <Link href="/" className="mr-2">
           Home
         </Link>
-        <Link href="/about" className="mx-2">
-          About
+        <Link
+          href="https://www.google.com/search?q=ecoindiajourneys%0D%0A%0D%0A&btnK=Google+Search&sca_esv=579484062&sxsrf=AM9HkKkwF5kM5lmChQjgXmqATTb7hG4QKw%3A1699120679242&source=hp&ei=J4ZGZej6DPacseMPpcuigA4&iflsig=AO6bgOgAAAAAZUaUN1hFp94i32Yej2JXoVuaFnEb_nNT#btnK=Google%20Search&lrd=0x38fdebc4481689d9:0x8865dd6bfab06f35,1"
+          target="_blank"
+          className="mx-2"
+        >
+          Reviews
         </Link>
         <Link href="/contact" className="mx-2">
           Contact
