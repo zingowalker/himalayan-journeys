@@ -1,4 +1,4 @@
-import ItinerariesDetails from "@/src/components/Itinerary/ItineraryDetails";
+import ItinerariesDetails from "@/src/components/tours/ItineraryDetails";
 import RenderMdx from "@/src/components/tours/RenderMdx";
 import Tag from "@/src/components/Elements/Tag";
 // import siteMetadata from "@/src/utils/siteMetaData";

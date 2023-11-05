@@ -15,7 +15,7 @@ const Logo = () => {
         />
       </div>
       <span className="font-normal dark:font-semibold text-lg md:text-xl text-multicolor flex flex-col">
-        Himalayan Journeys
+        Himland Journeys
       </span>
     </Link>
   );
