@@ -1,7 +1,7 @@
 import { format, parseISO } from "date-fns";
 import Link from "next/link";
 import { slug } from "github-slugger";
-import ViewCounter from "./ViewsCounter";
+import ViewCounter from "./ViewCounter";
 
 const ItineraryDetails = ({ itinerary, slug: itinerarySlug }) => {
   return (

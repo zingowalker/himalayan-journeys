@@ -13,7 +13,10 @@ export default function ScrollToTop() {
   }, []);
 
   const handleScroll = () => {
-    if (window.scrollY > 500) {
+    const windowHeight = window.innerHeight; // Get the window height
+    const scrollHeight = document.documentElement.scrollHeight; // Get the total scrollable height
+    const scrollPosition = window.scrollY; // Get the current scroll position
+    if (scrollPosition > 0.7 * (scrollHeight - windowHeight)) {
       setShowButton(true);
     } else {
       setShowButton(false);
@@ -22,18 +25,23 @@ export default function ScrollToTop() {
 
   return (
     <div>
-      <h2>Top of the page</h2>
-
-      <div style={{ height: "155rem" }} />
+      {/* <div style={{ height: "155rem" }} /> */}
 
       {showButton && (
         <button
           onClick={() => {
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
           }}
-          className="fixed bottom-8 right-8 bg-orange-500 text-white px-4 py-2 rounded-lg shadow-lg"
+          className="fixed bottom-8 right-8 bg-stone-800 dark:bg-accent text-white px-4 py-2 rounded-lg shadow-lg"
         >
-          to top
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="10"
+            height="10"
+            viewBox="0 0 24 24"
+          >
+            <path d="M12 2L0 14h6v8h12v-8h6z" fill="#fff" />
+          </svg>
         </button>
       )}
     </div>
