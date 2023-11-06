@@ -266,9 +266,9 @@ export default function Footer() {
           </div>
         </div>
       </div>
-        <div>
-          <ScrollToTop/>
-          </div>
+      <div className="">
+        <ScrollToTop />
+      </div>
     </footer>
   );
 }
