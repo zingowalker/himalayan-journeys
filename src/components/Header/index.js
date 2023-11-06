@@ -3,8 +3,7 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import {
-  DribbbleIcon,
-  GithubIcon,
+  InstagramIcon,
   LinkedinIcon,
   MoonIcon,
   SunIcon,
@@ -65,7 +64,7 @@ const Header = () => {
       </button>
 
       <nav
-        className=" w-max py-3 px-6 sm:px-8 border border-solid border-dark rounded-full font-medium capitalize  items-center flex  sm:hidden
+        className="w-max py-3 px-6 sm:px-8 border border-solid border-dark rounded-full font-medium capitalize  items-center flex  sm:hidden
         fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50
         transition-all ease duration-300
         "
@@ -134,6 +133,33 @@ const Header = () => {
           )}
         </button>
       </nav>
+      <div className="hidden sm:flex items-center">
+        <a
+          href=""
+          className="inline-block w-6 h-6 mr-4"
+          aria-label="Reach out to me via LinkedIn"
+          target="_blank"
+        >
+          <LinkedinIcon className="hover:scale-125 transition-all ease duration-200 dark:fill-light" />
+        </a>
+        <a
+          href=""
+          className="inline-block w-6 h-6 mr-4"
+          aria-label="Reach out to me via Twitter"
+          target="_blank"
+        >
+          <TwitterIcon className="hover:scale-125 transition-all ease duration-200 dark:fill-light" />
+        </a>
+        <a
+          href=""
+          className="inline-block w-6 h-6 mr-4"
+          aria-label="Check my profile on Instagram"
+          target="_blank"
+        >
+          <InstagramIcon className="hover:scale-125 transition-all ease duration-200 dark:fill-light" />
+        </a>
+       
+      </div>
     </header>
   );
 };
