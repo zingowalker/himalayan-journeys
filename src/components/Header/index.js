@@ -11,7 +11,7 @@ import {
 } from "../Icons";
 import siteMetadata from "@/src/utils/siteMetaData";
 import { useThemeSwitch } from "../Hooks/useThemeSwitch";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { cx } from "@/src/utils";
 
 const Header = () => {
@@ -21,6 +21,7 @@ const Header = () => {
   const toggle = () => {
     setClick(!click);
   };
+
   return (
     <header className="w-full p-4 px-8 sm:px-10 flex items-center justify-between">
       <Logo />
