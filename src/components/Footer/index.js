@@ -199,7 +199,8 @@ export default function Footer() {
           </div>
 
           <div className="border-t py-8 text-center text-sm text-gray-400">
-            © 2023 - himland journeys. All rights reserved.
+            © {`${new Date().getFullYear()}`} - Eco Himalayan Journeys. All
+            rights reserved.
           </div>
         </div>
       </div>

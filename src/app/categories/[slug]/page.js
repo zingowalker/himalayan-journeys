@@ -27,9 +27,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   return {
     title: `${params.slug.replaceAll("-", " ")} Itineraries`,
-    description: `Learn more about ${
-      params.slug === "all" ? "web development" : params.slug
-    } through our collection of expert blogs and tutorials`,
+    description: `Know more about ${
+      params.slug === "all" ? "ladakh" : params.slug
+    } through our collection of itineraries`,
   };
 }
 
@@ -61,7 +61,7 @@ const CategoryPage = ({ params }) => {
       </div>
       <Categories categories={allCategories} currentSlug={params.slug} />
 
-      <div className="grid  grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 grid-rows-2 gap-16 mt-5 sm:mt-10 md:mt-24 sxl:mt-32 px-5 sm:px-10 md:px-24 sxl:px-32">
+      <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-16 mt-5 sm:mt-10 md:mt-24 sxl:mt-32 px-5 sm:px-10 md:px-24 sxl:px-32">
         {itineraries.map((itinerary, index) => (
           <article key={index} className="col-span-1 row-span-1 relative">
             <ItineraryLayoutThree itinerary={itinerary} />

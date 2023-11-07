@@ -9,7 +9,7 @@ import {
   SunIcon,
   TwitterIcon,
 } from "../Icons";
-// import siteMetadata from "@/src/utils/siteMetaData";
+import siteMetadata from "@/src/utils/siteMetaData";
 import { useThemeSwitch } from "../Hooks/useThemeSwitch";
 import { useState } from "react";
 import { cx } from "@/src/utils";
@@ -22,7 +22,7 @@ const Header = () => {
     setClick(!click);
   };
   return (
-    <header className="w-full p-4 px-5 sm:px-10 flex items-center justify-between">
+    <header className="w-full p-4 px-8 sm:px-10 flex items-center justify-between">
       <Logo />
       <button
         className="inline-block sm:hidden z-50"
@@ -158,7 +158,6 @@ const Header = () => {
         >
           <InstagramIcon className="hover:scale-125 transition-all ease duration-200 dark:fill-light" />
         </a>
-       
       </div>
     </header>
   );
