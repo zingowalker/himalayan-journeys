@@ -25,9 +25,9 @@ export default function Footer() {
               </p>
 
               <div className="flex gap-4">
-                <InstagramIcon className="hover:scale-125 transition-all ease duration-200 dark:fill-light" />
-                <LinkedinIcon className="hover:scale-125 transition-all ease duration-200 dark:fill-light" />
-                <TwitterIcon className="hover:scale-125 transition-all ease duration-200 dark:fill-light" />
+                <InstagramIcon className="dark:fill-light" />
+                <LinkedinIcon className="dark:fill-light" />
+                <TwitterIcon className="dark:fill-light" />
               </div>
             </div>
 

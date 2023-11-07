@@ -1,111 +1,111 @@
 import ItinerariesDetails from "@/src/components/tours/ItineraryDetails";
 import RenderMdx from "@/src/components/tours/RenderMdx";
 import Tag from "@/src/components/Elements/Tag";
-// import siteMetadata from "@/src/utils/siteMetaData";
+import siteMetadata from "@/src/utils/siteMetaData";
 import { allItineraries } from "contentlayer/generated";
 import { slug } from "github-slugger";
 import Image from "next/image";
 
-// export async function generateStaticParams() {
-//   return allItineraries.map((itinerary) => ({
-//     slug: itinerary._raw.flattenedPath,
-//   }));
-// }
+export async function generateStaticParams() {
+  return allItineraries.map((itinerary) => ({
+    slug: itinerary._raw.flattenedPath,
+  }));
+}
 
-// export async function generateMetadata({ params }) {
-//   const itinerary = allItineraries.find(
-//     (itinerary) => itinerary._raw.flattenedPath === params.slug
-//   );
-//   if (!itinerary) {
-//     return;
-//   }
+export async function generateMetadata({ params }) {
+  const itinerary = allItineraries.find(
+    (itinerary) => itinerary._raw.flattenedPath === params.slug
+  );
+  if (!itinerary) {
+    return;
+  }
 
-//   const publishedAt = new Date(itinerary.publishedAt).toISOString();
-//   const modifiedAt = new Date(
-//     itinerary.updatedAt || itinerary.publishedAt
-//   ).toISOString();
+  const publishedAt = new Date(itinerary.publishedAt).toISOString();
+  const modifiedAt = new Date(
+    itinerary.updatedAt || itinerary.publishedAt
+  ).toISOString();
 
-//   //   let imageList = [siteMetadata.socialBanner];
-// //   if (itinerary.image) {
-// //     imageList =
-// //       typeof itinerary.image.filePath === "string"
-// //         ? [
-// //             siteMetadata.siteUrl +
-// //               itinerary.image.filePath.replace("../public", ""),
-// //           ]
-// //         : itinerary.image;
-// //   }
-// //   const ogImages = imageList.map((img) => {
-// //     return { url: img.includes("http") ? img : siteMetadata.siteUrl + img };
-// //   });
+  let imageList = [siteMetadata.socialBanner];
+  if (itinerary.image) {
+    imageList =
+      typeof itinerary.image.filePath === "string"
+        ? [
+            siteMetadata.siteUrl +
+              itinerary.image.filePath.replace("../public", ""),
+          ]
+        : itinerary.image;
+  }
+  const ogImages = imageList.map((img) => {
+    return { url: img.includes("http") ? img : siteMetadata.siteUrl + img };
+  });
 
-//   const authors = itinerary?.author ? [itinerary.author] : siteMetadata.author;
+  const authors = itinerary?.author ? [itinerary.author] : siteMetadata.author;
 
-// //   return {
-// //     title: itinerary.title,
-// //     description: itinerary.description,
-// //     openGraph: {
-// //       title: itinerary.title,
-// //       description: itinerary.description,
-// //       url: siteMetadata.siteUrl + itinerary.url,
-// //       siteName: siteMetadata.title,
-// //       locale: "en_US",
-// //       type: "article",
-// //       publishedTime: publishedAt,
-// //       modifiedTime: modifiedAt,
-// //       images: ogImages,
-// //       authors: authors.length > 0 ? authors : [siteMetadata.author],
-// //     },
-// //     twitter: {
-// //       card: "summary_large_image",
-// //       title: itinerary.title,
-// //       description: itinerary.description,
-// //       images: ogImages,
-// //     },
-// //   };
-// }
+  return {
+    title: itinerary.title,
+    description: itinerary.description,
+    openGraph: {
+      title: itinerary.title,
+      description: itinerary.description,
+      url: siteMetadata.siteUrl + itinerary.url,
+      siteName: siteMetadata.title,
+      locale: "en_US",
+      type: "article",
+      publishedTime: publishedAt,
+      modifiedTime: modifiedAt,
+      images: ogImages,
+      authors: authors.length > 0 ? authors : [siteMetadata.author],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: itinerary.title,
+      description: itinerary.description,
+      images: ogImages,
+    },
+  };
+}
 
 export default function ItineraryPage({ params }) {
   const itinerary = allItineraries.find(
     (itinerary) => itinerary._raw.flattenedPath === params.slug
   );
 
-  //   let imageList = [siteMetadata.socialBanner];
-  //   if (itinerary.image) {
-  //     imageList =
-  //       typeof itinerary.image.filePath === "string"
-  //         ? [
-  //             siteMetadata.siteUrl +
-  //               itinerary.image.filePath.replace("../public", ""),
-  //           ]
-  //         : itinerary.image;
-  //   }
+  let imageList = [siteMetadata.socialBanner];
+  if (itinerary.image) {
+    imageList =
+      typeof itinerary.image.filePath === "string"
+        ? [
+            siteMetadata.siteUrl +
+              itinerary.image.filePath.replace("../public", ""),
+          ]
+        : itinerary.image;
+  }
 
-  //   const jsonLd = {
-  //     "@context": "https://schema.org",
-  //     "@type": "NewsArticle",
-  //     headline: itinerary.title,
-  //     description: itinerary.description,
-  //     image: imageList,
-  //     datePublished: new Date(itinerary.publishedAt).toISOString(),
-  //     dateModified: new Date(
-  //       itinerary.updatedAt || itinerary.publishedAt
-  //     ).toISOString(),
-  //     author: [
-  //       {
-  //         "@type": "Person",
-  //         name: itinerary?.author ? [itinerary.author] : siteMetadata.author,
-  //         url: siteMetadata.twitter,
-  //       },
-  //     ],
-  //   };
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    headline: itinerary.title,
+    description: itinerary.description,
+    image: imageList,
+    datePublished: new Date(itinerary.publishedAt).toISOString(),
+    dateModified: new Date(
+      itinerary.updatedAt || itinerary.publishedAt
+    ).toISOString(),
+    author: [
+      {
+        "@type": "Person",
+        name: itinerary?.author ? [itinerary.author] : siteMetadata.author,
+        url: siteMetadata.twitter,
+      },
+    ],
+  };
 
   return (
     <>
-      {/* <script
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      /> */}
+      />
       <article>
         <div className="mb-8 text-center relative w-full h-[70vh] bg-dark">
           <div className="w-full z-10 flex flex-col items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">

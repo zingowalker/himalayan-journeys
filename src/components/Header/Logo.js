@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import logoImg from "@/public/logo1.png";
+import logoImg from "@/public/logo.png";
 
 const Logo = () => {
   return (
@@ -15,7 +15,7 @@ const Logo = () => {
         />
       </div>
       <span className="font-normal dark:font-semibold text-lg md:text-xl text-multicolor flex flex-col">
-        Himland Journeys
+        Eco Himalayan Journeys
       </span>
     </Link>
   );
