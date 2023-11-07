@@ -32,7 +32,7 @@ export default function ContactForm() {
         className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray 
         focus:border-gray bg-transparent"
       />
-      You can email me at
+      You can email us at
       <input
         type="email"
         placeholder="your@email"
@@ -40,7 +40,7 @@ export default function ContactForm() {
         className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray 
         focus:border-gray bg-transparent"
       />
-      or reach out to me on
+      or reach out to us on
       <input
         type="tel"
         placeholder="your phone"
