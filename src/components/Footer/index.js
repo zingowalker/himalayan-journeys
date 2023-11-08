@@ -1,6 +1,9 @@
 import Logo from "../Header/Logo";
 import ScrollToTop from "../Hooks/ScrollToTop";
-import { InstagramIcon, LinkedinIcon, TwitterIcon } from "../Icons";
+import { BsInstagram } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa";
+import { RiTwitterXLine } from "react-icons/ri";
+import { AiOutlineWhatsApp } from "react-icons/ai";
 
 export default function Footer() {
   return (
@@ -25,9 +28,10 @@ export default function Footer() {
               </p>
 
               <div className="flex gap-4">
-                <InstagramIcon className="dark:fill-light" />
-                <LinkedinIcon className="dark:fill-light" />
-                <TwitterIcon className="dark:fill-light" />
+                <BsInstagram className="dark:fill-light" />
+                <FaLinkedin className="dark:fill-light" />
+                <RiTwitterXLine className="dark:fill-light" />
+                <AiOutlineWhatsApp className="dar:fill-light" />
               </div>
             </div>
 
