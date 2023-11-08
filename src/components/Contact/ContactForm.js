@@ -24,15 +24,15 @@ export default function ContactForm() {
         className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray 
         focus:border-gray bg-transparent"
       />
-      and I want to discuss more on
+      . I want to discuss on the trip
       <input
         type="text"
-        placeholder="title"
-        {...register("title", {})}
+        placeholder="trip title"
+        {...register("trip title", { required: true, maxLength: 30 })}
         className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray 
         focus:border-gray bg-transparent"
       />
-      You can email me at
+      . You can email
       <input
         type="email"
         placeholder="your@email"
@@ -50,8 +50,8 @@ export default function ContactForm() {
       />
       Here are some details about my travel plans: <br />
       <textarea
-        {...register("travel details", {})}
-        placeholder="My travel is about..."
+        {...register("travel details", { required: true, min: 30 })}
+        placeholder="What do you want to see and do? And tell us a bit about yourself..."
         rows={3}
         className="w-full outline-none mt-4 border-0 p-0 mx-0 focus:ring-0  placeholder:text-lg border-b border-gray 
         focus:border-gray bg-transparent"

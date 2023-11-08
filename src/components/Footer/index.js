@@ -4,6 +4,7 @@ import { BsInstagram } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
 import { AiOutlineWhatsApp } from "react-icons/ai";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -90,15 +91,6 @@ export default function Footer() {
                     href="#"
                     className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
                   >
-                    About
-                  </a>
-                </div>
-
-                <div>
-                  <a
-                    href="#"
-                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
-                  >
                     Blog
                   </a>
                 </div>
@@ -129,12 +121,14 @@ export default function Footer() {
 
               <nav className="flex flex-col gap-4">
                 <div>
-                  <a
-                    href="#"
-                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
-                  >
-                    Contact
-                  </a>
+                  <div>
+                    <Link
+                      href="/contact"
+                      className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
+                    >
+                      Contact
+                    </Link>
+                  </div>
                 </div>
 
                 <div>
