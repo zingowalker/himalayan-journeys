@@ -15,7 +15,7 @@ const Featured = ({ itineraries }) => {
         <article className=" col-span-2  sxl:col-span-1 row-span-2 relative">
           <ItineraryLayoutOne itinerary={sortedItineraries[0]} />
         </article>
-        <article className=" col-span-2 sm:col-span-1 row-span-1 relative">
+        <article className="col-span-2 sm:col-span-1 row-span-1 relative">
           <ItineraryLayoutTwo itinerary={sortedItineraries[1]} />
         </article>
         <article className="col-span-2 sm:col-span-1 row-span-1 relative">

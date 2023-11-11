@@ -14,7 +14,7 @@ const ItineraryLayoutThree = ({ itinerary }) => {
           alt={itinerary.title}
           width={itinerary.image.width}
           height={itinerary.image.height}
-          className=" aspect-[4/3] w-full h-full object-cover object-center  group-hover:scale-105 transition-all ease duration-300 "
+          className="aspect-[4/3] w-full h-full object-cover object-center"
           sizes="(max-width: 640px) 100vw,(max-width: 1024px) 50vw, 33vw"
         />
       </Link>
@@ -25,14 +25,7 @@ const ItineraryLayoutThree = ({ itinerary }) => {
         </span>
         <Link href={itinerary.url} className="inline-block my-1">
           <h2 className="font-semibold capitalize  text-base line-clamp-3 sm:text-lg">
-            <span
-              className="bg-gradient-to-r  dark:from-accentDark/50
-              dark:to-accentDark/50
-              bg-[length:0px_6px]
-              group-hover:bg-[length:100%_6px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500"
-            >
-              {itinerary.description}
-            </span>
+            <span className="cursor-pointer">{itinerary.description}</span>
           </h2>
         </Link>
 

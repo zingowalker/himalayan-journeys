@@ -83,7 +83,7 @@ export default function ItineraryPage({ params }) {
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "travel agency",
     headline: itinerary.title,
     description: itinerary.description,
     image: imageList,

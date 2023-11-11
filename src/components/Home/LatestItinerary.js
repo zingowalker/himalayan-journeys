@@ -13,7 +13,7 @@ const LatestItinerary = ({ itineraries }) => {
         </h2>
         <Link
           href="/categories/all"
-          className="inline-block font-medium text-orange-500 dark:text-accentDark underline underline-offset-2  text-base md:text-lg"
+          className="inline-block font-medium text-orange-500 dark:text-accentDark text-base md:text-lg"
         >
           view all
         </Link>

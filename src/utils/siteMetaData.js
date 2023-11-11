@@ -1,19 +1,17 @@
 // please update required information
 const siteMetadata = {
-  title: "Eco Himalayan Journeys",
-  author: "eco himalayan journeys",
-  headerTitle: "Tour & trave agency",
+  title: "Himalayan Eco Journeys",
+  author: "himalayan eco journeys",
+  headerTitle: "Online Tour & trave agency",
   description:
-    "A online travel agency for motorcycle, trekking, culture tour, mountaineering and wildlife.",
+    "An online travel agency for motorcycle, trekking, culture tour, mountaineering and wildlife.",
   language: "en-us",
   theme: "system", // system, dark or light
   siteUrl: "https://ecohimalayanjourneys", // your website URL
   siteLogo: "/logo.png",
   socialBanner: "/social-banner.png", // add social banner in the public folder
-  email: "ecoindiajourneys@gmail.com",
-  twitter: "https://twitter.com/",
-  instagram: "https://instagram.com",
-  linkedin: "https://www.linkedin.com/",
+  email: "himalayanecomjourneys@gmail.com",
+  instagram: "https://www.instagram.com/himalayanecom/",
   locale: "en-US",
 };
 

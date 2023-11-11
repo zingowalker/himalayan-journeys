@@ -19,7 +19,7 @@ const ItineraryLayoutOne = ({ itinerary }) => {
         alt={itinerary.title}
         width={itinerary.image.width}
         height={itinerary.image.height}
-        className="w-full h-full object-center object-cover rounded-xl group-hover:scale-105 transition-all ease duration-300"
+        className="w-full h-full object-center object-cover rounded-xl"
         sizes="(max-width: 1180px) 100vw, 50vw"
       />
 
@@ -31,10 +31,7 @@ const ItineraryLayoutOne = ({ itinerary }) => {
         />
         <Link href={itinerary.url} className="mt-6">
           <h2 className="font-bold capitalize text-sm xs:text-base sm:text-xl md:text-2xl text-light mt-2 sm:mt-4">
-            <span
-              className="dark:from-accentDark/50 dark:to-accentDark/50
-                group-hover:bg-[length:100%_6px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 text-lg"
-            >
+            <span className="bg-left-bottom bg-no-repeat transition-[background-size] text-lg">
               {itinerary.title}
             </span>
           </h2>
