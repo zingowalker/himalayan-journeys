@@ -6,8 +6,8 @@ import "@dotlottie/react-player/dist/index.css";
 const LottieAnimation = () => {
   return (
     <DotLottiePlayer
-      className="dark:bg-light"
-      src="/animation_1.lottie"
+      className="dark:bg-transparent text-white"
+      src="/contact.lottie"
       autoplay
       loop
     ></DotLottiePlayer>

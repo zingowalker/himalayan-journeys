@@ -10,9 +10,7 @@ const ItineraryDetails = ({ itinerary, slug: itinerarySlug }) => {
         {/* {format(parseISO(itinerary.publishedAt), "LLLL, yyyy")} */}
         Available
       </span>
-      <span className="m-3">
-        <ViewCounter slug={itinerarySlug} />
-      </span>
+      <span className="m-3">{/* <ViewCounter slug={itinerarySlug} /> */}</span>
       <div className="m-3">{itinerary.readingTime.text}</div>
       <Link href={`/categories/${slug(itinerary.tags[0])}`} className="m-3">
         #{itinerary.tags[0]}

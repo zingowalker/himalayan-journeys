@@ -24,8 +24,8 @@ export default function Footer() {
               </div>
 
               <p className="mb-6 text-gray-500 sm:pr-8">
-                A unit of Eco India Journeys. Member of All Ladakh Tour Operator
-                Association (ALTOA) Registered under UT Leh.
+                Member of All Ladakh Tour Operator Association (ALTOA)
+                Registered under UT Leh.
               </p>
 
               <div className="flex gap-4">
@@ -197,8 +197,8 @@ export default function Footer() {
           </div>
 
           <div className="border-t py-8 text-center text-sm text-gray-400">
-            © {`${new Date().getFullYear()}`} - Eco Himalayan Journeys. All
-            rights reserved.
+            © {`${new Date().getFullYear()}`} - Eco India Journeys. All rights
+            reserved.
           </div>
         </div>
       </div>

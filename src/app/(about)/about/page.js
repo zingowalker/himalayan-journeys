@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "About Us",
-  description: `Here are some details about our online travel agency.`,
+  description: `Here are some details about our travel agency.`,
 };
 
 export default function About() {
