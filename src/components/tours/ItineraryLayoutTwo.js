@@ -34,7 +34,12 @@ const ItineraryLayoutTwo = ({ itinerary }) => {
 
         <span className="inline-block w-full capitalize text-gray dark:text-light/50 font-semibold  text-xs sm:text-base">
           {/* {format(new Date(itinerary.publishedAt), "MMMM dd, yyyy")} */}
-          Know more
+          <Link
+            href={itinerary.url}
+            className="cursor-pointer border-spacing-2"
+          >
+            Know more
+          </Link>
         </span>
       </div>
     </div>
