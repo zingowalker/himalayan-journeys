@@ -3,7 +3,9 @@ import ScrollToTop from "../Hooks/ScrollToTop";
 import { BsInstagram } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
-import { AiOutlineWhatsApp } from "react-icons/ai";
+import { AiOutlineFacebook } from "react-icons/ai";
+import siteMetadata from "@/src/utils/siteMetaData";
+
 import Link from "next/link";
 
 export default function Footer() {
@@ -23,18 +25,28 @@ export default function Footer() {
                   <Logo />
                 </a>
               </div>
-
               <p className="mb-6 text-gray-500 sm:pr-8">
                 Member of All Ladakh Tour Operator Association (ALTOA)
                 Registered under UT Leh.
               </p>
-
               <div className="flex gap-4">
-                <BsInstagram className="dark:fill-light" />
-                <FaLinkedin className="dark:fill-light" />
-                <RiTwitterXLine className="dark:fill-light" />
-                <AiOutlineWhatsApp className="dar:fill-light" />
-              </div>
+                <a href={siteMetadata.instagram}>
+                  <BsInstagram className="dark:fill-light cursor-pointer" />
+                </a>
+                <a href={siteMetadata.linkedin}>
+                  <FaLinkedin className="dark:fill-light cursor-pointer" />
+                </a>
+                <a href={siteMetadata.twitter}>
+                  <RiTwitterXLine className="dark:fill-light cursor-pointer" />
+                </a>
+                <a href={siteMetadata.facebook}>
+                  <AiOutlineFacebook className="dar:fill-light cursor-pointer" />
+                </a>
+              </div>{" "}
+              <br />
+              <blockquote className="capitalize text-orange-500">
+                We are mostly active on instagram
+              </blockquote>
             </div>
 
             <div>

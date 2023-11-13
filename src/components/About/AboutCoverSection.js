@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import profile from "../../../public/logo3.png";
+import profile from "../../../public/logo.png";
 
 const AboutCoverSection = () => {
   return (
@@ -16,16 +16,26 @@ const AboutCoverSection = () => {
       </div>
 
       <div className="w-full md:w-1/2 flex flex-col text-left items-start justify-center px-5 xs:p-10 pb-10 lg:px-16">
-        <h2 className="font-bold capitalize text-4xl xs:text-5xl sxl:text-6xl  text-center lg:text-left">
-          Dream
+        <h2 className="font-bold capitalize text-lg xs:text-5xl sxl:text-6xl  text-center lg:text-left">
+          About
         </h2>
-        <p className="font-medium capitalize mt-4 text-base">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
-          commodi repudiandae, soluta quisquam voluptatem voluptatum sequi
-          perspiciatis beatae! Modi cum cupiditate aspernatur soluta
-          consectetur, sunt illo, adipisci delectus repellendus rerum porro
-          architecto eos? Placeat recusandae aspernatur omnis ipsum voluptate,
-          suscipit cum nisi rerum pariatur quos delectus, culpa illum debitis
+        <p className="font-medium mt-4 text-base">
+          Eco India Journeys is a recognized and registered under the Department
+          of Tourism – Govt. of UT Leh Ladakh, India and is an active member of
+          the All Ladakh Tour Operators Association (ALTOA). We at Eco India
+          Journeys make sure that your vocation dreams are specialized according
+          to your plan that nothing misses while your journeys with us.
+        </p>
+        <p>
+          Eco India Journeys is committed to responsible & eco tourism, through
+          its policies and practices, which permeate all aspects of its
+          business. We strongly feel that all our holidays should benefit the
+          local communities, protect the environment by minimizing pollution,
+          and respect local traditions, religion and heritage.
+        </p>
+        <p>
+          Over 15 years of experience in trekking, mountaineering, cultural, Eco
+          and Special interest tours.
         </p>
       </div>
     </section>
