@@ -138,7 +138,7 @@ const Header = () => {
         <a
           href={siteMetadata.linkedin}
           className="inline-block w-6 h-6 mr-4"
-          aria-label="Reach out to me via LinkedIn"
+          aria-label="Reach out to us via LinkedIn"
           target="_blank"
         >
           <LinkedinIcon className="hover:scale-125 transition-all ease duration-200 dark:fill-light" />
@@ -146,7 +146,7 @@ const Header = () => {
         <a
           href={siteMetadata.twitter}
           className="inline-block w-6 h-6 mr-4"
-          aria-label="Reach out to me via Twitter"
+          aria-label="Reach out to us via Twitter"
           target="_blank"
         >
           <TwitterIcon className="hover:scale-125 transition-all ease duration-200 dark:fill-light" />
@@ -154,7 +154,7 @@ const Header = () => {
         <a
           href={siteMetadata.instagram}
           className="inline-block w-6 h-6 mr-4"
-          aria-label="Check my profile on Instagram"
+          aria-label="Check us profile on Instagram"
           target="_blank"
         >
           <InstagramIcon className="hover:scale-125 transition-all ease duration-200 dark:fill-light" />

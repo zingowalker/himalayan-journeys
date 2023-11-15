@@ -30,16 +30,32 @@ export default function Footer() {
                 Registered under UT Leh.
               </p>
               <div className="flex gap-4">
-                <a href={siteMetadata.instagram}>
+                <a
+                  href={siteMetadata.instagram}
+                  aria-label="Check our profile on Instagram"
+                  target="_blank"
+                >
                   <BsInstagram className="dark:fill-light cursor-pointer" />
                 </a>
-                <a href={siteMetadata.linkedin}>
+                <a
+                  href={siteMetadata.linkedin}
+                  aria-label="Check our profile on Linkedin"
+                  target="_blank"
+                >
                   <FaLinkedin className="dark:fill-light cursor-pointer" />
                 </a>
-                <a href={siteMetadata.twitter}>
+                <a
+                  href={siteMetadata.twitter}
+                  aria-label="Check our profile on Twitter"
+                  target="_blank"
+                >
                   <RiTwitterXLine className="dark:fill-light cursor-pointer" />
                 </a>
-                <a href={siteMetadata.facebook}>
+                <a
+                  href={siteMetadata.facebook}
+                  aria-label="Check our profile on Facebook"
+                  target="_blank"
+                >
                   <AiOutlineFacebook className="dar:fill-light cursor-pointer" />
                 </a>
               </div>{" "}
@@ -149,7 +165,7 @@ export default function Footer() {
                     href="#"
                     className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
                   >
-                    eamil@gmail.com
+                    ecoindiajourneys@gmail.com
                   </a>
                 </div>
 
@@ -164,10 +180,11 @@ export default function Footer() {
 
                 <div>
                   <a
-                    href="#"
+                    href="https://ecoindiajourneys.com/sitemap-0.xml"
+                    target="_blank"
                     className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
                   >
-                    FAQ
+                    Sitemap
                   </a>
                 </div>
               </nav>

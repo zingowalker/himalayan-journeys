@@ -32,7 +32,7 @@ export default function ScrollToTop() {
           onClick={() => {
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
           }}
-          className="fixed bottom-5 right-5 bg-stone-800 dark:bg-accent text-white px-4 py-2 rounded-lg shadow-lg"
+          className="fixed bottom-5 right-5 bg-stone-800 dark:bg-orange-500 text-white px-4 py-2 rounded-lg shadow-lg"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
