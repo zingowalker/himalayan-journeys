@@ -11,7 +11,7 @@ import {
 } from "../Icons";
 import siteMetadata from "@/src/utils/siteMetaData";
 import { useThemeSwitch } from "../Hooks/useThemeSwitch";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { cx } from "@/src/utils";
 
 const Header = () => {

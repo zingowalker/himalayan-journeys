@@ -1,4 +1,4 @@
-import { sortItineraries } from "@/src/utils";
+import { sortItineraries } from "../../../src/utils";
 import Link from "next/link";
 import React from "react";
 import ItineraryLayoutThree from "../tours/ItineraryLayoutThree";

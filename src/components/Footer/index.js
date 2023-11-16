@@ -4,7 +4,7 @@ import { BsInstagram } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
 import { AiOutlineFacebook } from "react-icons/ai";
-import siteMetadata from "@/src/utils/siteMetaData";
+import siteMetadata from "../../../src/utils/siteMetaData";
 
 import Link from "next/link";
 

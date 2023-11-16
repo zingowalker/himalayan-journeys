@@ -4,7 +4,6 @@ import HomeCover from "../components/Home/HomeCover";
 import Featured from "../components/Home/Featured";
 import LatestItinerary from "../components/Home/LatestItinerary";
 
-
 export default function Home() {
   console.log(allItineraries);
 

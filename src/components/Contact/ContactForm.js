@@ -1,66 +1,75 @@
 "use client";
+
 import React from "react";
 import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { toast } from "sonner";
 
 export default function ContactForm() {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    reset,
+    formState: { errors, isSubmitting },
   } = useForm();
   const onSubmit = (data) => console.log(data);
-  console.log(errors);
+
+  const processForm = async (data) => {
+    const result = await sendEmail(data);
+
+    if (result?.success) {
+      console.log({ data: result.data });
+      toast.success("Email sent!");
+      reset();
+      return;
+    }
+
+    // toast error
+    console.log(result?.error);
+    toast.error("Something went wrong!");
+  };
 
   return (
     <form
-      onSubmit={handleSubmit(onSubmit)}
+      onSubmit={handleSubmit(processForm)}
       className="mt-12 text-base xs:text-lg sm:text-xl font-medium leading-relaxed font-in"
     >
-      Hello! My name is{" "}
+      Name:
       <input
-        type="text"
-        placeholder="your name"
-        {...register("name", { required: true, maxLength: 80 })}
+        placeholder="name"
+        {...register("name")}
         className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray 
         focus:border-gray bg-transparent"
       />
-      . I want to discuss on the trip
+      {errors.name?.message && (
+        <p className="ml-1 mt-1 text-sm text-red-400"></p>
+      )}
+      Email
       <input
-        type="text"
-        placeholder="trip title"
-        {...register("trip title", { required: true, maxLength: 30 })}
+        placeholder="email"
+        {...register("email")}
         className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray 
         focus:border-gray bg-transparent"
       />
-      . You can email
-      <input
-        type="email"
-        placeholder="your@email"
-        {...register("email", {})}
-        className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray 
-        focus:border-gray bg-transparent"
-      />
-      or reach out to me on
-      <input
-        type="tel"
-        placeholder="your phone (optional)"
-        {...register("phone number", {})}
-        className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray 
-        focus:border-gray bg-transparent"
-      />
-      Here are some details about my travel plans: <br />
+      {errors.email?.message && (
+        <p className="ml-1 mt-1 text-sm text-red-400"></p>
+      )}
+      Message..
       <textarea
-        {...register("travel details", { required: true, min: 30 })}
+        {...register("travel details")}
         placeholder="What do you want to see and do? And tell us a bit about yourself..."
         rows={3}
         className="w-full outline-none mt-4 border-0 p-0 mx-0 focus:ring-0  placeholder:text-lg border-b border-gray 
         focus:border-gray bg-transparent"
       />
-      <input
-        type="submit"
+      {errors.message?.message && <p className="ml-1 text-sm text-red-400"></p>}
+      <button
+        disabled={isSubmitting}
         value="send request"
         className="mt-8 font-medium inline-block capitalize text-lg sm:text-xl py-2 sm:py-3 px-6 sm:px-8 border-2 border-solid border-dark dark:border-light rounded cursor-pointer"
-      />
+      >
+        {isSubmitting ? "Submitting..." : "Submit"}
+      </button>
     </form>
   );
 }
