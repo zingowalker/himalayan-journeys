@@ -1,11 +1,12 @@
+"use client";
+
 import Logo from "../Header/Logo";
 import ScrollToTop from "../Hooks/ScrollToTop";
 import { BsInstagram } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
 import { AiOutlineFacebook } from "react-icons/ai";
-import siteMetadata from "../../../src/utils/siteMetaData";
-
+import siteMetadata from "@/src/utils/siteMetaData";
 import Link from "next/link";
 
 export default function Footer() {
@@ -106,6 +107,15 @@ export default function Footer() {
                     Northeast
                   </a>
                 </div>
+
+                <div>
+                  <a
+                    href="#"
+                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
+                  >
+                    Bhutan
+                  </a>
+                </div>
               </nav>
             </div>
 
@@ -116,12 +126,12 @@ export default function Footer() {
 
               <nav className="flex flex-col gap-4">
                 <div>
-                  <a
-                    href="#"
+                  <Link
+                    href="/ourteam"
                     className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
                   >
-                    Blog
-                  </a>
+                    Our Team
+                  </Link>
                 </div>
                 <div>
                   <a
