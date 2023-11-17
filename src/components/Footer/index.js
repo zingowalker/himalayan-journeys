@@ -231,7 +231,7 @@ export default function Footer() {
               &copy; {`${new Date().getFullYear()}`} Eco India Journeys. All
               rights reserved.
             </div>
-            <div className="flex items-center space-x-2 sm:space-y-2">
+            <div className="flex items-center justify-evenly ">
               <div className="text-gray-600 flex items-center">
                 <IoMdCall className=" text-gray-600" />
                 +91 8800777421
@@ -241,7 +241,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="">
-        <ScrollToTop />
+        {/* <ScrollToTop /> */}
       </div>
     </footer>
   );
