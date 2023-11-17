@@ -1,4 +1,5 @@
 "use client";
+import { IoMdCall } from "react-icons/io";
 
 import Logo from "../Header/Logo";
 import ScrollToTop from "../Hooks/ScrollToTop";
@@ -127,7 +128,7 @@ export default function Footer() {
               <nav className="flex flex-col gap-4">
                 <div>
                   <Link
-                    href="/ourteam"
+                    href="#"
                     className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
                   >
                     Our Team
@@ -175,7 +176,7 @@ export default function Footer() {
                     href="#"
                     className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
                   >
-                    ecoindiajourneys@gmail.com
+                    Why choose us
                   </a>
                 </div>
 
@@ -187,19 +188,8 @@ export default function Footer() {
                     chat
                   </a>
                 </div>
-
-                <div>
-                  <a
-                    href="https://ecoindiajourneys.com/sitemap-0.xml"
-                    target="_blank"
-                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
-                  >
-                    Sitemap
-                  </a>
-                </div>
               </nav>
             </div>
-
             <div>
               <div className="mb-4 font-bold uppercase tracking-widest text-gray-800">
                 Legal
@@ -236,9 +226,17 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="border-t py-8 text-center text-sm text-gray-400">
-            © {`${new Date().getFullYear()}`} - Eco India Journeys. All rights
-            reserved.
+          <div className="border-t py-8 flex items-center justify-between px-2 text-sm text-gray-500">
+            <div>
+              &copy; {`${new Date().getFullYear()}`} Eco India Journeys. All
+              rights reserved.
+            </div>
+            <div className="flex items-center space-x-2 sm:space-y-2">
+              <div className="text-gray-600 flex items-center">
+                <IoMdCall className=" text-gray-600" />
+                +91 8800777421
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -20,18 +20,15 @@ const AboutCoverSection = () => {
           About
         </h2>
         <p className="font-medium mt-4 text-base">
-          Eco India Journeys is a recognized and registered under the Department
-          of Tourism – Govt. of UT Leh Ladakh, India and is an active member of
-          the All Ladakh Tour Operators Association (ALTOA). We at Eco India
-          Journeys make sure that your vocation dreams are specialized according
-          to your plan that nothing misses while your journeys with us.
+          Eco India Journeys is committed to responsible & eco-tourism through all its
+          policies. Being born in Ladakh, we feel strongly that all our holidays should
+          benefit the local communities, protect the environment by minimizing
+          pollution, and respect local traditions, religion and heritage. So, in our tours,
+          we raise awearnes to these topics and also promote interactions with local
+          people - we don’t do different things, but do the same things differently.
         </p>
         <p>
-          Eco India Journeys is committed to responsible & eco tourism, through
-          its policies and practices, which permeate all aspects of its
-          business. We strongly feel that all our holidays should benefit the
-          local communities, protect the environment by minimizing pollution,
-          and respect local traditions, religion and heritage.
+          
         </p>
         <p>
           Over 15 years of experience in trekking, mountaineering, cultural, Eco
