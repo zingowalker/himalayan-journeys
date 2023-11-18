@@ -13,7 +13,6 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="text-light dark:text-dark md:mt-8">
-      <div className="border-t dark:border-light border-dark items-center justify-center py-8 px-2"></div>
       <div className="pt-12 lg:pt-16 text-sm text-dark dark:text-light">
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="mb-16 grid grid-cols-2 gap-12 md:grid-cols-4 lg:grid-cols-6 lg:gap-8">
@@ -65,12 +64,6 @@ export default function Footer() {
               <blockquote className="capitalize text-orange-500">
                 We are mostly active on instagram
               </blockquote>
-              <div className="text-dark dark:text-light mt-2">
-                Call: +91 8800777421
-              </div>
-              <div className="text-dark dark:text-light">
-                Email: ecoindiajourneys@gmail.com
-              </div>
             </div>
 
             <div>
@@ -222,7 +215,7 @@ export default function Footer() {
 
                 <div>
                   <a
-                    href="#"
+                    href="cancellation-policy"
                     className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
                   >
                     Cancellation Policy
