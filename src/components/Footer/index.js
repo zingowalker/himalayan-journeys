@@ -13,12 +13,12 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="text-light dark:text-dark md:mt-8">
-      <div className="border-t py-8 text-center text-sm text-gray-400"></div>
+      <div className="border-t dark:border-light border-dark items-center justify-center py-8 px-2"></div>
       <div className="pt-12 lg:pt-16 text-sm text-dark dark:text-light">
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="mb-16 grid grid-cols-2 gap-12 md:grid-cols-4 lg:grid-cols-6 lg:gap-8">
             <div className="col-span-full lg:col-span-2">
-              <div className="mb-4 lg:-mt-2">
+              <div className="mb-2 lg:-mt-2">
                 <a
                   href="/"
                   className="inline-flex items-center justify-center gap-2 text-xl font-bold text-black md:text-2xl"
@@ -65,6 +65,12 @@ export default function Footer() {
               <blockquote className="capitalize text-orange-500">
                 We are mostly active on instagram
               </blockquote>
+              <div className="text-dark dark:text-light mt-2">
+                Call: +91 8800777421
+              </div>
+              <div className="text-dark dark:text-light">
+                Email: ecoindiajourneys@gmail.com
+              </div>
             </div>
 
             <div>
@@ -226,22 +232,16 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="border-t py-8 flex items-center justify-between px-2 text-sm text-gray-500">
+          <div className="border-t py-8 flex items-center justify-center px-2 text-sm text-gray-500">
             <div>
               &copy; {`${new Date().getFullYear()}`} Eco India Journeys. All
               rights reserved.
-            </div>
-            <div className="flex items-center justify-evenly ">
-              <div className="text-gray-600 flex items-center">
-                <IoMdCall className=" text-gray-600" />
-                +91 8800777421
-              </div>
             </div>
           </div>
         </div>
       </div>
       <div className="">
-        {/* <ScrollToTop /> */}
+        <ScrollToTop />
       </div>
     </footer>
   );
