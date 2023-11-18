@@ -1,4 +1,8 @@
-import Image from "next/image";
+export const metadata = {
+  title: "Eco India Journeys: A travel agency for multi-day itinerary",
+  description: `providing the best of services and excellence`,
+};
+
 import { allItineraries } from "contentlayer/generated";
 import HomeCover from "../components/Home/HomeCover";
 import Featured from "../components/Home/Featured";
