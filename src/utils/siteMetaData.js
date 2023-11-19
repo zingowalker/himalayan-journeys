@@ -2,9 +2,9 @@
 const siteMetadata = {
   title: "Eco India Journeys",
   author: "Eco India Journeys",
-  headerTitle: "Online Tour & travel agency for multi-day itineraries",
+  headerTitle: "Online travel agency for multi-day itineraries",
   description:
-    "An online travel agency for motorcycle, trekking, culture tour, mountaineering and wildlife.",
+    "An online travel agency for multi-day itineraries for motorcycle expeditions, trekking, culture tour, mountaineering and wildlife.",
   language: "en-us",
   theme: "system",
   siteUrl: "https://ecoindiajourneys.com",

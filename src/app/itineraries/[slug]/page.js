@@ -83,7 +83,7 @@ export default function ItineraryPage({ params }) {
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "travel agency",
+    "@type": "article",
     headline: itinerary.title,
     description: itinerary.description,
     image: imageList,
@@ -95,7 +95,7 @@ export default function ItineraryPage({ params }) {
       {
         "@type": "Person",
         name: itinerary?.author ? [itinerary.author] : siteMetadata.author,
-        url: siteMetadata.twitter,
+        url: siteMetadata.siteUrl + itinerary.url,
       },
     ],
   };
