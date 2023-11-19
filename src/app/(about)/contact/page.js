@@ -15,8 +15,11 @@ export default function Contact() {
       </div>
       <div className="w-full mt-4 md:w-3/5 flex flex-col items-start justify-center px-5 xs:px-10 md:px-16 pb-8">
         <h2 className="font-bold capitalize  text-2xl xs:text-3xl sm:text-4xl">
-          Let's Connect!
+          Get in touch
         </h2>
+        <p className="mt-4 text-lg text-gray-600">
+          Our friendly team would love to hear from you.
+        </p>
         <ContactForm />
       </div>
     </section>
