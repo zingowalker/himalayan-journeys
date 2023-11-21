@@ -81,7 +81,7 @@ export default function ContactForm() {
             className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray 
         focus:border-gray bg-transparent"
           />
-          <p className="ml-2 form-text grid w-full items-center justify-start">
+          <p className="form-text grid w-full items-center justify-start">
             We'll never share your email with anyone else.
           </p>
         </div>
