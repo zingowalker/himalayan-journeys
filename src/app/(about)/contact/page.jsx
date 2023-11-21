@@ -4,7 +4,7 @@ import siteMetadata from "@/src/utils/siteMetaData";
 
 export const metadata = {
   title: "Contact Us",
-  description: `Contact us through the form available on this page or email us at ${siteMetadata.email}`,
+  description: `Contact us for Trekking, Motorcycle adventure tours, Camping, Culture, Packaged tour Multi-day itinerary and more ${siteMetadata.email}`,
 };
 
 export default function Contact() {
