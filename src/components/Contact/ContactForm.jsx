@@ -1,15 +1,8 @@
 "use client";
 
 import { useState } from "react";
-// import { toast } from "sonner";
 
 export default function ContactForm() {
-  // const [fullname, setFullname] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [message, setMessage] = useState("");
-  // const [error, setError] = useState([]);
-  // const [success, setSuccess] = useState(false);
-
   const [user, setUser] = useState({
     username: "",
     email: "",
@@ -59,8 +52,8 @@ export default function ContactForm() {
       onSubmit={handleSubmit}
       className="mt-8 space-y-4 text-base xs:text-lg sm:text-xl font-medium leading-relaxed font-in"
     >
-      <div className="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
-        <div className="grid w-full  items-center gap-1.5">
+      <div className="ml-2 grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-1">
+        <div className="grid w-full  items-center justify-start gap-1.5">
           <label htmlFor="username" className="">
             Your Name
           </label>
@@ -75,7 +68,7 @@ export default function ContactForm() {
         focus:border-gray bg-transparent"
           />
         </div>
-        <div className="grid w-full items-center gap-1.5">
+        <div className="ml-2 grid w-full items-center gap-1.5">
           <label htmlFor="email">Email</label>
           <input
             type="text"
@@ -88,17 +81,18 @@ export default function ContactForm() {
             className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray 
         focus:border-gray bg-transparent"
           />
-          <p className="ml-2 form-text grid w-full items-center">
+          <p className="ml-2 form-text grid w-full items-center justify-start">
             We'll never share your email with anyone else.
           </p>
         </div>
 
-        <div className="grid w-full items-center gap-1.5">
-          <label htmlFor="message">Message</label>
+        <div className="ml-2 grid w-full items-center">
+          <label htmlFor="message">Message...</label>
           <textarea
             name="message"
             id="message"
             rows={3}
+            cols={3}
             value={user.message}
             onChange={handleChange}
             required
@@ -112,7 +106,6 @@ export default function ContactForm() {
             type="submit"
             className="mt-8 font-medium inline-block capitalize text-lg sm:text-xl py-2 sm:py-3 px-6 sm:px-8 border-2 border-solid border-dark dark:border-light rounded cursor-pointer"
           >
-            {/* {isSubmitting ? "Submitting..." : "Submit"} */}
             Submit
           </button>
           <div className="bg-slate-100 flex flex-col">
@@ -121,13 +114,12 @@ export default function ContactForm() {
                 Message sent, thank you. We will response shortly!
               </p>
             )}
-            
+
             {status === "error" && (
               <p className="ml-1 text-sm text-red-400">
                 There was an error submitting your message. Please try again.
               </p>
             )}
-
           </div>
         </div>
       </div>
