@@ -9,7 +9,7 @@ export default function ContactForm() {
     phone: "",
     message: "",
   });
-  const [status, setStatus] = useState(null);
+  const [status, setStatus] = useState("Submit");
 
   function handleChange(e) {
     const name = e.target.name;
@@ -20,6 +20,7 @@ export default function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatus("Sending...");
 
     try {
       const response = await fetch("/api/postcontact", {
@@ -52,7 +53,7 @@ export default function ContactForm() {
       onSubmit={handleSubmit}
       className="mt-8 space-y-4 text-base xs:text-lg sm:text-xl font-medium leading-relaxed font-in"
     >
-      <div className="ml-2 grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-1">
+      <div className=" grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-1">
         <div className="grid w-full  items-center justify-start gap-1.5">
           <label htmlFor="username" className="">
             Your Name
@@ -68,7 +69,7 @@ export default function ContactForm() {
         focus:border-gray bg-transparent"
           />
         </div>
-        <div className="ml-2 grid w-full items-center gap-1.5">
+        <div className=" grid w-full items-center gap-1.5">
           <label htmlFor="email">Email</label>
           <input
             type="text"
@@ -86,7 +87,7 @@ export default function ContactForm() {
           </p>
         </div>
 
-        <div className="ml-2 grid w-full items-center">
+        <div className=" grid w-full items-center">
           <label htmlFor="message">Message...</label>
           <textarea
             name="message"
@@ -106,12 +107,12 @@ export default function ContactForm() {
             type="submit"
             className="mt-8 font-medium inline-block capitalize text-lg sm:text-xl py-2 sm:py-3 px-6 sm:px-8 border-2 border-solid border-dark dark:border-light rounded cursor-pointer"
           >
-            Submit
+            {status}
           </button>
-          <div className="bg-slate-100 flex flex-col">
+          <div className="flex flex-col">
             {status === "success" && (
               <p className="text-green-800 ml-1">
-                Message sent, thank you. We will response shortly!
+                Message sent, thank you. We shall response shortly!
               </p>
             )}
 

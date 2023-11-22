@@ -4,6 +4,8 @@ import Header from "../../src/components/Header";
 import Footer from "../../src/components/Footer";
 import siteMetadata from "../utils/siteMetaData";
 import { Inter, Manrope } from "next/font/google";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -63,7 +65,7 @@ export default function RootLayout({ children }) {
         )}
       >
         <Header />
-        {children}
+        <Suspense fallback={<Loading />}>{children}</Suspense>
         <Footer />
       </body>
     </html>
