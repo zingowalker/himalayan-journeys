@@ -65,7 +65,7 @@ export default function ContactForm() {
             value={user.username}
             onChange={handleChange}
             required
-            className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray 
+            className="outline-none border-0 p-0 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray 
         focus:border-gray bg-transparent"
           />
         </div>
@@ -79,7 +79,7 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             autoComplete="off"
-            className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray 
+            className="outline-none border-0 p-0 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray 
         focus:border-gray bg-transparent"
           />
           <p className="form-text grid w-full items-center justify-start">
@@ -104,20 +104,20 @@ export default function ContactForm() {
           />
 
           <button
-            type="submit"
+            type="send"
             className="mt-8 font-medium inline-block capitalize text-lg sm:text-xl py-2 sm:py-3 px-6 sm:px-8 border-2 border-solid border-dark dark:border-light rounded cursor-pointer"
           >
             {status}
           </button>
           <div className="flex flex-col">
             {status === "success" && (
-              <p className="text-green-800 ml-1">
+              <p className="mb-2 text-green-800 text-sm">
                 Message sent, thank you. We shall response shortly!
               </p>
             )}
 
             {status === "error" && (
-              <p className="ml-1 text-sm text-red-400">
+              <p className="mb-2 text-sm text-red-400">
                 There was an error submitting your message. Please try again.
               </p>
             )}
