@@ -1,9 +1,8 @@
-// import { format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const ItineraryLayoutThree = ({ itinerary }) => {
+const ItineraryLayoutFour = ({ itinerary }) => {
   return (
     <div className="group flex flex-col items-center text-dark dark:text-light">
       <Link href={itinerary.url} className="h-full rounded-xl overflow-hidden">
@@ -38,4 +37,4 @@ const ItineraryLayoutThree = ({ itinerary }) => {
   );
 };
 
-export default ItineraryLayoutThree;
+export default ItineraryLayoutFour;

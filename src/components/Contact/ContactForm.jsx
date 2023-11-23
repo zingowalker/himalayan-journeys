@@ -20,7 +20,7 @@ export default function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus("Sending...");
+    setStatus("Submitting...");
 
     try {
       const response = await fetch("/api/postcontact", {
