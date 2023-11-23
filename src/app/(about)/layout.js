@@ -3,7 +3,7 @@ import InsightRoll from "@/src/components/About/InsightRoll";
 const insights = [
   "15+ Years Experience",
   "10+ Years of Travel Agency",
-  "99% Client Satisfaction",
+  "95% Client Satisfaction",
   "Ladakh",
   "Kashmir",
   "Uttarkhand",
