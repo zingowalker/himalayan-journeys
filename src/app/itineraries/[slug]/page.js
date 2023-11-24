@@ -86,13 +86,7 @@ export default function ItineraryPage({ params }) {
     "@type": "Organization",
     headline: itinerary.title,
     description: itinerary.description,
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5",
-      reviewCount: "17",
-      bestRating: "5",
-      worstRating: "5",
-    },
+
     image: imageList,
     datePublished: new Date(itinerary.publishedAt).toISOString(),
     dateModified: new Date(
