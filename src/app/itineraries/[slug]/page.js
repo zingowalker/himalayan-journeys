@@ -141,7 +141,7 @@ export default function ItineraryPage({ params }) {
               open
             >
               <summary className="text-lg font-semibold capitalize cursor-pointer">
-                Content List
+                Content
               </summary>
               <ul className="mt-4 font-in text-base">
                 {itinerary.toc.map((heading) => {
