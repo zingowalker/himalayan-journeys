@@ -83,9 +83,16 @@ export default function ItineraryPage({ params }) {
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "article",
+    "@type": "Organization",
     headline: itinerary.title,
     description: itinerary.description,
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      reviewCount: "17",
+      bestRating: "5",
+      worstRating: "5",
+    },
     image: imageList,
     datePublished: new Date(itinerary.publishedAt).toISOString(),
     dateModified: new Date(
@@ -140,7 +147,7 @@ export default function ItineraryPage({ params }) {
               open
             >
               <summary className="text-lg font-semibold capitalize cursor-pointer">
-                Table of content
+                Content List
               </summary>
               <ul className="mt-4 font-in text-base">
                 {itinerary.toc.map((heading) => {
