@@ -127,19 +127,19 @@ export default function Footer() {
               <nav className="flex flex-col gap-4">
                 <div>
                   <Link
-                    href="#"
+                    href="/about"
                     className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
                   >
-                    Our Team
+                    About
                   </Link>
                 </div>
                 <div>
-                  <a
-                    href="#"
+                  <Link
+                    href="/our-values"
                     className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
                   >
-                    What we do
-                  </a>
+                    Our values
+                  </Link>
                 </div>
 
                 <div>
