@@ -10,10 +10,7 @@ export default function OurValues() {
         <h1 className="text-base font-semibold tracking-wide text-orange-500 uppercase">
           Our Values
         </h1>
-        <p className="mt-2 text-lg font-extrabold leading-8 tracking-tight capitalize">
-          Respect the environment and the traditions
-        </p>
-        <p className="mt-2 leading-8">
+        <p className="mt-2 text-base font-semibold tracking-wide">
           Our journeys benefit the local communities, protect the environment by
           minimizing pollution, and respect local traditions, religion, and
           heritage.
