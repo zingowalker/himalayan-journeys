@@ -8,7 +8,7 @@ const AboutCoverSection = () => {
       <div className="w-full md:w-1/2 h-full border-r-2 border-solid border-dark dark:border-light flex justify-center">
         <Image
           src={profile}
-          alt="himalayan eco journeys"
+          alt="eco india journeys"
           className="w-4/5  xs:w-3/4 md:w-full h-full object-contain object-center"
           priority
           sizes="(max-width: 768px) 100vw,(max-width: 1180px) 50vw, 50vw"
@@ -20,17 +20,25 @@ const AboutCoverSection = () => {
           About
         </h2>
         <p className="font-medium mt-4 text-base">
-          Eco India Journeys is committed to responsible & eco-tourism through all its
-          policies. Being born in Ladakh, we feel strongly that all our holidays should
-          benefit the local communities, protect the environment by minimizing
-          pollution, and respect local traditions, religion and heritage. So, in our tours,
-          we raise awearnes to these topics and also promote interactions with local
-          people - we don’t do different things, but do the same things differently.
+          Eco India Journeys is committed to responsible & eco-tourism through
+          all its policies.
         </p>
-        <p>
-          
+        <p className="mt-2 font-medium text-base">
+          We feel strongly that all our holidays should benefit the local
+          communities, protect the environment by minimizing pollution, and
+          respect local traditions, religion and heritage.
         </p>
-        <p>
+        <p className="mt-2 font-medium text-base">
+          So, in our tours, we raise awareness to these topics and also promote
+          interactions with local people - we don’t do different things, but do
+          the same things differently.
+        </p>
+        <p className="mt-2 font-medium text-base">
+          At Eco India Journeys, we make sure that your vacation dreams are
+          specialized according to your plan and budget, and you miss nothing
+          whilst in the Himalayas.
+        </p>
+        <p className="mt-2 font-medium text-base">
           Over 15 years of experience in trekking, mountaineering, cultural, Eco
           and Special interest tours.
         </p>

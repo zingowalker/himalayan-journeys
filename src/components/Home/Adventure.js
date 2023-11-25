@@ -20,7 +20,7 @@ const Adventure = ({ itineraries }) => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-16 mt-16">
-        {sortedItineraries.slice(8, 10).map((itinerary, index) => {
+        {sortedItineraries.slice(8, 11).map((itinerary, index) => {
           return (
             <article key={index} className="col-span-1 row-span-1 relative">
               <ItineraryLayoutFour itinerary={itinerary} />

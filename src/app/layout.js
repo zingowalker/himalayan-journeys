@@ -28,10 +28,10 @@ export const metadata = {
   description: siteMetadata.description,
   openGraph: {
     title: siteMetadata.title,
-    description: siteMetadata.description,
+    description: [siteMetadata.description, "Your travel store for more info"],
     url: siteMetadata.siteUrl,
     siteName: siteMetadata.title,
-    images: [siteMetadata.socialBanner],
+    images: [siteMetadata.siteLogo],
     locale: "en_US",
     type: "website",
   },

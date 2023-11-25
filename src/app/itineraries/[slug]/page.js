@@ -83,10 +83,9 @@ export default function ItineraryPage({ params }) {
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "Article",
     headline: itinerary.title,
     description: itinerary.description,
-
     image: imageList,
     datePublished: new Date(itinerary.publishedAt).toISOString(),
     dateModified: new Date(

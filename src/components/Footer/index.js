@@ -133,23 +133,6 @@ export default function Footer() {
                     About
                   </Link>
                 </div>
-                <div>
-                  <Link
-                    href="/our-values"
-                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
-                  >
-                    Our values
-                  </Link>
-                </div>
-
-                <div>
-                  <a
-                    href="#"
-                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
-                  >
-                    Why choose us
-                  </a>
-                </div>
               </nav>
             </div>
 
@@ -168,24 +151,6 @@ export default function Footer() {
                       Contact
                     </Link>
                   </div>
-                </div>
-
-                <div>
-                  <a
-                    href="#"
-                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
-                  >
-                    Why choose us
-                  </a>
-                </div>
-
-                <div>
-                  <a
-                    href="#"
-                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
-                  >
-                    chat
-                  </a>
                 </div>
               </nav>
             </div>

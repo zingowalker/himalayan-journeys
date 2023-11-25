@@ -9,3 +9,5 @@ export const sortItineraries = (itineraries) => {
         compareDesc(parseISO(a.publishedAt), parseISO(b.publishedAt))
       );
   };
+
+

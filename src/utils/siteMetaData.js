@@ -1,4 +1,5 @@
 // please update required information
+
 const siteMetadata = {
   title: "Eco India Journeys",
   author: "Eco India Journeys",
