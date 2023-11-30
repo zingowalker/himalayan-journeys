@@ -8,9 +8,11 @@ const ActivitiesList = [
   "Ladakh",
   "Kashmir",
   "Uttarkhand",
+  "Rajasthan",
   "Arunachal Pradesh",
   "Shillong",
   "Kerala",
+  "Bhutan",
   "Sri Lanka",
 ];
 
