@@ -20,7 +20,7 @@ const LatestItinerary = ({ itineraries }) => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-16 mt-16">
-        {sortedItineraries.slice(4, 8).map((itinerary, index) => {
+        {sortedItineraries.slice(5, 8).map((itinerary, index) => {
           return (
             <article key={index} className="col-span-1 row-span-1 relative">
               <ItineraryLayoutThree itinerary={itinerary} />
