@@ -26,7 +26,7 @@ export default function Footer() {
                   <Logo />
                 </a>
               </div>
-              <p className="mb-6 text-gray-500 sm:pr-8">
+              <p className="mb-6 sm:pr-8">
                 Member of All Ladakh Tour Operator Association (ALTOA)
                 Registered under UT Leh.
               </p>
@@ -131,6 +131,14 @@ export default function Footer() {
                     className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
                   >
                     About
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    href="/why-us"
+                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
+                  >
+                    Why Us
                   </Link>
                 </div>
               </nav>
