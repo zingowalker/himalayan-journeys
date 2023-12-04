@@ -1,17 +1,21 @@
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
 
+export const metadata = {
+  title: "Error: 404",
+};
+
 const NotFound = () => {
   return (
     <section>
-      <div className="py-10 dark:text-light">
+      <div className="py-10 px-4 dark:text-light">
         <div className="text-center">
-          <p className="text-base font-semibold ">404</p>
-          <h1 className="mt-2 text-3xl font-bold tracking-tight  sm:text-5xl">
-            Page not found
+          <p className="text-base font-semibold ">Error code: 404</p>
+          <h1 className="mt-2 text-lg font-semibold tracking-tight  sm:text-5xl">
+            Oops! We can't seem to find the page you're looking for.
           </h1>
           <p className="mt-4 text-base leading-7 text-gray-600">
-            Sorry, we could not find the page you&apos;re looking for.
+            You may have mistyped the address or the page may have moved.
           </p>
           <div className="mt-4 flex items-center justify-center gap-x-3">
             <Link

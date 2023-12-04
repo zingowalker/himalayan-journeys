@@ -65,7 +65,7 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function ItineraryPage({ params }) {
+export default function FaqPage({ params }) {
   const itinerary = allItineraries.find(
     (itinerary) => itinerary._raw.flattenedPath === params.slug
   );
@@ -140,7 +140,7 @@ export default function ItineraryPage({ params }) {
               open
             >
               <summary className="text-lg font-semibold capitalize cursor-pointer">
-                Content
+                Table of Content
               </summary>
               <ul className="mt-4 font-in text-base">
                 {itinerary.toc.map((heading) => {

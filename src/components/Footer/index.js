@@ -146,17 +146,17 @@ export default function Footer() {
 
             <div>
               <div className="mb-4 font-bold uppercase tracking-widest text-gray-800">
-                Support
+                Discover
               </div>
 
               <nav className="flex flex-col gap-4">
                 <div>
                   <div>
                     <Link
-                      href="/contact"
+                      href="/faq"
                       className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
                     >
-                      Contact
+                      FAQ
                     </Link>
                   </div>
                 </div>

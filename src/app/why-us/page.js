@@ -4,7 +4,7 @@ export const metadata = {
 
 export default function page() {
   return (
-    <section className="w-full sm:mt-24 md:mt-32 px-5 sm:px-10 md:px-24 sxl:px-32">
+    <section className="w-full p-4 sm:mt-24 md:mt-32 px-5 sm:px-10 md:px-24 sxl:px-32">
       <h1 className="mb-6 text-lg font-semibold dark:text-light lg:text-3xl lg:font-bold">
         Why Us
       </h1>
