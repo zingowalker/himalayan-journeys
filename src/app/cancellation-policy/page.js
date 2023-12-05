@@ -1,6 +1,5 @@
 export const metadata = {
   title: "Cancellation Policy",
-  description: `Short and simple cancellation policy`,
 };
 
 const CancellationPolicy = () => {
