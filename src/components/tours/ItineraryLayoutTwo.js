@@ -8,7 +8,7 @@ const ItineraryLayoutTwo = ({ itinerary }) => {
     <div className="group grid grid-cols-12 gap-4 items-center text-dark dark:text-light">
       <Link
         href={itinerary.url}
-        className=" col-span-12 lg:col-span-4 h-full rounded-xl overflow-hidden"
+        className=" col-span-12 lg:col-span-4 h-full overflow-hidden"
       >
         <Image
           src={itinerary.image.filePath.replace("../public", "")}

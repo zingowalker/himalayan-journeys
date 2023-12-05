@@ -6,7 +6,7 @@ import React from "react";
 const ItineraryLayoutThree = ({ itinerary }) => {
   return (
     <div className="group flex flex-col items-center text-dark dark:text-light">
-      <Link href={itinerary.url} className="h-full rounded-xl overflow-hidden">
+      <Link href={itinerary.url} className="h-full  overflow-hidden">
         <Image
           src={itinerary.image.filePath.replace("../public", "")}
           placeholder="blur"

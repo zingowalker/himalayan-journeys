@@ -6,10 +6,10 @@ import { slug } from "github-slugger";
 
 const ItineraryLayoutOne = ({ itinerary }) => {
   return (
-    <div className="group inline-block overflow-hidden rounded-xl">
+    <div className="group inline-block overflow-hidden">
       <div
         className="absolute top-0 left-0 bottom-0 right-0 h-full
-            bg-gradient-to-b from-transparent from-0% to-dark/90 rounded-xl z-10
+            bg-gradient-to-b from-transparent from-0% to-dark/90 z-10
             "
       />
       <Image
@@ -19,7 +19,7 @@ const ItineraryLayoutOne = ({ itinerary }) => {
         alt={itinerary.title}
         width={itinerary.image.width}
         height={itinerary.image.height}
-        className="w-full h-full object-center object-cover rounded-xl"
+        className="w-full h-full object-center object-cover"
         sizes="(max-width: 1180px) 100vw, 50vw"
       />
 
