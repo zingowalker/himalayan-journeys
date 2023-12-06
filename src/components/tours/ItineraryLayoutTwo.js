@@ -8,7 +8,7 @@ const ItineraryLayoutTwo = ({ itinerary }) => {
     <div className="group grid grid-cols-12 gap-4 items-center text-dark dark:text-light">
       <Link
         href={itinerary.url}
-        className=" col-span-12 lg:col-span-4 h-full overflow-hidden"
+        className=" col-span-12 lg:col-span-4 h-full rounded-xl overflow-hidden"
       >
         <Image
           src={itinerary.image.filePath.replace("../public", "")}
@@ -32,7 +32,7 @@ const ItineraryLayoutTwo = ({ itinerary }) => {
           </h2>
         </Link>
 
-        <span className="inline-block w-full capitalize text-gray dark:text-light/50 font-semibold  text-xs sm:text-base">
+        <span className="inline-block w-full text-gray dark:text-light/50 font-semibold  text-xs sm:text-base">
           {/* {format(new Date(itinerary.publishedAt), "MMMM dd, yyyy")} */}
           <Link
             href={itinerary.url}

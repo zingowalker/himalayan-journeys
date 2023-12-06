@@ -5,7 +5,7 @@ import Link from "next/link";
 const ItineraryLayoutFour = ({ itinerary }) => {
   return (
     <div className="group flex flex-col items-center text-dark dark:text-light">
-      <Link href={itinerary.url} className="h-full  overflow-hidden">
+      <Link href={itinerary.url} className="h-full rounded-xl overflow-hidden">
         <Image
           src={itinerary.image.filePath.replace("../public", "")}
           placeholder="blur"
@@ -23,7 +23,7 @@ const ItineraryLayoutFour = ({ itinerary }) => {
           {itinerary.tags[0]}
         </span>
         <Link href={itinerary.url} className="inline-block my-1">
-          <h2 className="font-semibold capitalize  text-base line-clamp-3 sm:text-lg">
+          <h2 className="font-semibold text-base line-clamp-3 sm:text-lg">
             <span className="cursor-pointer">{itinerary.description}</span>
           </h2>
         </Link>
