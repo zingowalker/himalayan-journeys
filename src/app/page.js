@@ -10,7 +10,7 @@ import LatestItinerary from "../components/Home/LatestItinerary";
 import Adventure from "../components/Home/Adventure";
 
 export default function Home() {
-  console.log(allItineraries);
+  // console.log(allItineraries);
 
   return (
     <main className="flex flex-col items-center justify-center">
