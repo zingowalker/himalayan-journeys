@@ -64,9 +64,9 @@ export default function RootLayout({ children }) {
           "font-mr bg-light dark:bg-dark"
         )}
       >
-        <Header />
-        <Suspense fallback={<Loading />}>{children}</Suspense>
-        <Footer />
+          <Header />
+          <Suspense fallback={<Loading />}>{children}</Suspense>
+          <Footer />
       </body>
     </html>
   );
