@@ -1,6 +1,5 @@
 export const metadata = {
-  title:
-    "Eco India Journeys: Multi-Day India and Himalayas Itinerary Specialists",
+  title: "Eco India Journeys: India and Himalayas Specialists",
   description: `Registered under UT Leh, India`,
 };
 
@@ -9,6 +8,7 @@ import HomeCover from "../components/Home/HomeCover";
 import Featured from "../components/Home/Featured";
 import LatestItinerary from "../components/Home/LatestItinerary";
 import Adventure from "../components/Home/Adventure";
+import Trekking from "../components/Home/Trekking";
 
 export default function Home() {
   // console.log(allItineraries);
@@ -19,6 +19,7 @@ export default function Home() {
       <Featured itineraries={allItineraries} />
       <LatestItinerary itineraries={allItineraries} />
       <Adventure itineraries={allItineraries} />
+      <Trekking itineraries={allItineraries} />
     </main>
   );
 }
