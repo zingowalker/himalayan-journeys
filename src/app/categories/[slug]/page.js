@@ -26,7 +26,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   return {
-    title: `${params.slug.replaceAll("-", " ")} Itineraries`,
+    title: `${params.slug.replaceAll("-", " ")}`,
     description: `Know more about ${
       params.slug === "all" ? "ladakh" : params.slug
     } through our collection of itineraries`,
@@ -55,8 +55,7 @@ const CategoryPage = ({ params }) => {
           #{params.slug}
         </h1>
         <span className="mt-2 inline-block">
-          Explore a world of exciting tour itineraries and broaden your
-          horizons!
+          {params.slug.replaceAll("-", " ")}
         </span>
       </div>
       <Categories categories={allCategories} currentSlug={params.slug} />

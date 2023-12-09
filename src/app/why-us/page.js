@@ -1,5 +1,6 @@
 export const metadata = {
   title: "Why Us",
+  description: "Travel Agency providing personalized experience to guests",
 };
 
 export default function page() {
@@ -104,7 +105,7 @@ export default function page() {
           >
             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
           </svg>
-          We patronise responsible tourism, and contribute to the economy and
+          We patronize responsible tourism, and contribute to the economy and
           well being of the local people in the regions that we visit during our
           tours.
         </li>

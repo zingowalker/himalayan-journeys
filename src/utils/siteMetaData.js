@@ -1,7 +1,5 @@
-// please update required information
-
 const siteMetadata = {
-  title: "Multi-Day India and Himalayas Itinerary Specialists",
+  title: "Eco India Journeys",
   author: "Eco India Journeys",
   headerTitle: "Travel agency for multi-day itineraries",
   description: "Registered travel agency, specialized for India and Himalayas",
@@ -15,7 +13,7 @@ const siteMetadata = {
   facebook: "https://www.facebook.com/voyageecoindia/",
   linkedin: "https://www.linkedin.com/in/eco-india-journeys-a756b7a4/",
   twitter: "https://twitter.com/eco_journeys?lang=en",
-  locale: "en-us",
+  locale: "en-US",
 };
 
 module.exports = siteMetadata;
