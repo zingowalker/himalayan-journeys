@@ -1,6 +1,5 @@
 "use client";
 
-// import Link from "next/link";
 import Logo from "./Logo";
 import {
   // InstagramIcon,
@@ -11,82 +10,7 @@ import {
 } from "../Icons";
 // import siteMetadata from "@/src/utils/siteMetaData";
 import { useThemeSwitch } from "../Hooks/useThemeSwitch";
-// import { useState } from "react";
 import { cx } from "@/src/utils";
-// import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
-// import { useRouter } from "next/navigation";
-
-// const Header = () => {
-//   const [mode, setMode] = useThemeSwitch();
-//   const [click, setClick] = useState(false);
-//   let Links = [
-//     { name: "Home", link: "/" },
-//     { name: "Blog", link: "/coming-soon" },
-//     { name: "Contact", link: "/contact" },
-//   ];
-//   let [open, setOpen] = useState(false);
-
-//   const toggle = () => {
-//     setClick(!click);
-//   };
-
-//   return (
-//     <header className="dark:text-light fixed top-0 left-0 right-0 bg-white z-50">
-//       <div className="md:flex items-center justify-between  py-4 md:px-10 px-7">
-//         <div className="text-sm cursor-pointer flex items-center justify-around flex-row gap-1">
-//           <div className="flex">
-//             <Logo />
-//             <span className="flex items-center hover:text-orange-500 duration-300">
-//               Eco India Journeys
-//             </span>
-//           </div>
-//         </div>
-//         <div className="absolute top-6 left-6 md:hidden">
-//           <button
-//             onClick={() => setMode(mode === "light" ? "dark" : "light")}
-//             className={cx(
-//               "w-6 h-6 ease flex items-center justify-center rounded-full p-1",
-//               mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
-//             )}
-//             aria-label="theme-switcher"
-//           >
-//             {mode === "light" ? (
-//               <MoonIcon className={"fill-dark"} />
-//             ) : (
-//               <SunIcon className={"fill-dark"} />
-//             )}
-//           </button>
-//         </div>
-//         <div
-//           onClick={() => setOpen(!open)}
-//           className="absolute right-6 top-6 cursor-pointer md:hidden w-7 h-7"
-//         >
-//           {open ? <XMarkIcon /> : <Bars3BottomRightIcon />}
-//         </div>
-
-//         <ul
-//           className={`min-[320px] bg-light/80 md:bg-transparent md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto left-0 w-full md:w-auto md:pl-0 pl-9 transition-all ease duration-300 ease-in ${
-//             open ? "top-12" : "-top-full z-10"
-//           }`}
-//         >
-//           {Links.map((link, index) => (
-//             <li key={index} className="md:ml-8 md:my-0 my-7 cursor-pointer">
-//               <Link
-//                 href={link.link}
-//                 className="hover:text-orange-500 duration-300"
-//               >
-//                 {link.name}
-//               </Link>
-//             </li>
-//           ))}
-//         </ul>
-//       </div>
-
-//     </header>
-//   );
-// };
-
-// export default Header;
 
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -111,7 +35,7 @@ export default function Header() {
   const [mode, setMode] = useThemeSwitch();
 
   return (
-    <Disclosure as="nav" className="dark:text-light">
+    <Disclosure as="nav" className="dark:text-light shadow-md w-full">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -137,9 +61,7 @@ export default function Header() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current
-                            ? "bg-gray-900 text-orange-500"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-orange-500",
+                          item.current ? "text-light" : "hover:text-orange-500",
                           "rounded-md px-3 py-2 text-sm font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
@@ -180,9 +102,7 @@ export default function Header() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current
-                      ? "bg-gray-900 dark:text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                    item.current ? " dark:text-white" : "hover:text-orange-500",
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}

@@ -1,6 +1,7 @@
 export const metadata = {
-  title: "Eco India Journeys: A travel agency for multi-day itinerary",
-  description: `providing the best of services and excellence`,
+  title:
+    "Eco India Journeys: Multi-Day India and Himalayas Itinerary Specialists",
+  description: `Registered under UT Leh, India`,
 };
 
 import { allItineraries } from "contentlayer/generated";
