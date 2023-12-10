@@ -1,4 +1,4 @@
-import InsightRoll from "@/src/app/[lang]/components/About/InsightRoll";
+import InsightRoll from "@/src/components/About/InsightRoll";
 
 const insights = [
   "15+ Years Experience",

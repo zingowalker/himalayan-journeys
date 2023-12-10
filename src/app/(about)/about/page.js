@@ -1,5 +1,5 @@
-import AboutCoverSection from "@/src/app/[lang]/components/About/AboutCoverSection";
-import Activities from "@/src/app/[lang]/components/About/Activities";
+import AboutCoverSection from "@/src/components/About/AboutCoverSection";
+import Activities from "@/src/components/About/Activities";
 
 export const metadata = {
   title: "About Us",

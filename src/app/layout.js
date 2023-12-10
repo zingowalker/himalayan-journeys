@@ -14,7 +14,7 @@ const inter = Inter({
 });
 
 const roboto = Roboto({
-  weight: '300',
+  weight: "300",
   subsets: ["latin"],
   display: "swap",
   variable: "--font-mr",
@@ -24,7 +24,7 @@ export const metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
   title: {
     template: `%s | ${siteMetadata.title}`,
-    default: siteMetadata.title, // a default is required when creating a template
+    default: siteMetadata.title,
   },
   description: siteMetadata.description,
   openGraph: {
