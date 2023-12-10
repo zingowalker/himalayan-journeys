@@ -1,14 +1,8 @@
 "use client";
 
 import Logo from "./Logo";
-import {
-  // InstagramIcon,
-  // LinkedinIcon,
-  MoonIcon,
-  SunIcon,
-  // TwitterIcon,
-} from "../Icons";
-// import siteMetadata from "@/src/utils/siteMetaData";
+import { MoonIcon, SunIcon } from "../Icons";
+import siteMetadata from "@/src/utils/siteMetaData";
 import { useThemeSwitch } from "../Hooks/useThemeSwitch";
 import { cx } from "@/src/utils";
 
@@ -55,7 +49,7 @@ export default function Header() {
                   <Logo />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-2 space-y-4 items-center justify-between">
+                  <div className="flex px-4 py-4 items-center justify-between">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
@@ -64,7 +58,7 @@ export default function Header() {
                           item.current
                             ? "dark:text-light"
                             : "hover:text-orange-500",
-                          "rounded-md px-3 py-2 text-sm font-medium"
+                          "rounded-md px-4 py-2 text-base font-bold capital"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >

@@ -4,7 +4,7 @@ import siteMetadata from "@/src/utils/siteMetaData";
 
 export const metadata = {
   title: "Contact Us",
-  description: `Contact us for Trekking, Motorcycle adventure tours, Camping, Culture, Packaged tour Multi-day itinerary and more ${siteMetadata.email}`,
+  description: `Contact us for Motorbike, Trekking, Wildlife, Packaged tours and Multi-day itinerary. Email ${siteMetadata.email}`,
 };
 
 export default function Contact() {

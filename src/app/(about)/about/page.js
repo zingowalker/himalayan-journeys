@@ -3,7 +3,6 @@ import Activities from "@/src/components/About/Activities";
 
 export const metadata = {
   title: "About Us",
-  description: `Information on our travel agency.`,
 };
 
 const jsonLd = {
@@ -14,7 +13,7 @@ const jsonLd = {
   logo: "https://www.ecoindiajourneys.com/logoonsearch.png",
   name: "Eco India Journeys",
   description:
-    "Eco India Journeys is committed to responsible & eco-tourism. 15+ years of travel agency experience in the Himalayas.",
+    "We are committed to responsible & eco-tourism. Over 15 years of experience in Indian Himalayas.",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Eco India Journeys, near Jammu & Kashmir Bank, Leh, Ladakh",

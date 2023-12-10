@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Eco India Journeys: India and Himalayas Specialists",
-  description: `Registered under UT Ladakh, India`,
+  title: "Eco India Journeys",
+  description: `Eco India Journeys is a Travel Agency, registered under UT Ladakh, India Government. Over 15 years experience in Motorbike, trekking and Culture tours around Himalayas.`,
 };
 
 import { allItineraries } from "contentlayer/generated";
@@ -11,8 +11,6 @@ import Adventure from "../components/Home/Adventure";
 import Trekking from "../components/Home/Trekking";
 
 export default function Home() {
-  // console.log(allItineraries);
-
   return (
     <main className="flex flex-col items-center justify-center">
       <HomeCover itineraries={allItineraries} />
