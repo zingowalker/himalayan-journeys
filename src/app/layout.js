@@ -3,7 +3,7 @@ import { cx } from "../../src/utils";
 import Header from "../../src/components/Header";
 import Footer from "../../src/components/Footer";
 import siteMetadata from "../utils/siteMetaData";
-import { Inter, Manrope } from "next/font/google";
+import { Inter, Manrope, Roboto } from "next/font/google";
 import { Suspense } from "react";
 import Loading from "./loading";
 
@@ -13,7 +13,8 @@ const inter = Inter({
   variable: "--font-in",
 });
 
-const manrope = Manrope({
+const roboto = Roboto({
+  weight: '300',
   subsets: ["latin"],
   display: "swap",
   variable: "--font-mr",
@@ -60,13 +61,13 @@ export default function RootLayout({ children }) {
       <body
         className={cx(
           inter.variable,
-          manrope.variable,
+          roboto.variable,
           "font-mr bg-light dark:bg-dark"
         )}
       >
-          <Header />
-          <Suspense fallback={<Loading />}>{children}</Suspense>
-          <Footer />
+        <Header />
+        <Suspense fallback={<Loading />}>{children}</Suspense>
+        <Footer />
       </body>
     </html>
   );

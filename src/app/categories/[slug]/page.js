@@ -1,6 +1,6 @@
 import { allItineraries } from "@/.contentlayer/generated";
-import ItineraryLayoutThree from "@/src/components/tours/ItineraryLayoutThree";
-import Categories from "@/src/components/tours/Categories";
+import ItineraryLayoutThree from "@/src/app/[lang]/components/tours/ItineraryLayoutThree";
+import Categories from "@/src/app/[lang]/components/tours/Categories";
 import GithubSlugger, { slug } from "github-slugger";
 
 const slugger = new GithubSlugger();

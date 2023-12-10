@@ -1,4 +1,4 @@
-import Faq from "@/src/components/Faq";
+import Faq from "@/src/app/[lang]/components/Faq";
 
 export const metadata = {
   title: "FAQ",

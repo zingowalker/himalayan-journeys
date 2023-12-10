@@ -1,12 +1,13 @@
 const siteMetadata = {
   title: "Eco India Journeys",
-  author: "Eco India Journeys",
+  author: "EIJ",
   headerTitle: "Travel agency for multi-day itineraries",
-  description: "Registered travel agency, specialized for India and Himalayas",
+  description:
+    "Travel agency, registered under UT Ladakh. specialized for India and Himalayas",
   language: "en-us",
   theme: "system",
   siteUrl: "https://ecoindiajourneys.com",
-  siteLogo: "/logo2.png",
+  siteLogo: "/logo.png",
   socialBanner: "/social-banner.png",
   email: "ecoindiajourneys@gmail.com",
   instagram: "https://www.instagram.com/ecoindiajourneys/",

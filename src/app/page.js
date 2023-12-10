@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Eco India Journeys: India and Himalayas Specialists",
-  description: `Registered under UT Leh, India`,
+  description: `Registered under UT Ladakh, India`,
 };
 
 import { allItineraries } from "contentlayer/generated";
