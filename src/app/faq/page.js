@@ -6,8 +6,8 @@ export const metadata = {
 
 export default function FaqPage() {
   return (
-    <article>
+    <main>
       <Faq />
-    </article>
+    </main>
   );
 }

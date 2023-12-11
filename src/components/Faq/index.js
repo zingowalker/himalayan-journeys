@@ -87,20 +87,18 @@ const Faq = () => {
   };
 
   return (
-    <div>
-      <div className="p-2 m-8">
-        <h1 className="text-2xl mb-2 mx-auto dark:text-light">FAQ</h1>
-        {accordions.map((accordion) => (
-          <Accordion
-            key={accordion.key}
-            title={accordion.title}
-            data={accordion.data}
-            isOpen={accordion.isOpen}
-            toggleAccordion={() => toggleAccordion(accordion.key)}
-          />
-        ))}
-      </div>
-    </div>
+    <section className="p-2 m-8">
+      <h1 className="text-2xl mb-2 mx-auto dark:text-light">FAQ</h1>
+      {accordions.map((accordion) => (
+        <Accordion
+          key={accordion.key}
+          title={accordion.title}
+          data={accordion.data}
+          isOpen={accordion.isOpen}
+          toggleAccordion={() => toggleAccordion(accordion.key)}
+        />
+      ))}
+    </section>
   );
 };
 

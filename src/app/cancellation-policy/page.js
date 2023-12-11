@@ -4,7 +4,7 @@ export const metadata = {
 
 const CancellationPolicy = () => {
   return (
-    <article className="flex items-center justify-center max-7xl">
+    <main className="flex items-center justify-center max-7xl">
       <div className="container dark:text-light  leading-relaxed text-lg md:text-left md:text-base md:px-30 lg:px-60 px-8">
         <div className="container mx-auto py-8 rounded-lg shadow-md p-6">
           <h1 className="text-lg font-bold mb-6 lg:text-4xl">
@@ -42,7 +42,7 @@ const CancellationPolicy = () => {
           <div>Office: +91 8587044340</div>
         </div>
       </div>
-    </article>
+    </main>
   );
 };
 
