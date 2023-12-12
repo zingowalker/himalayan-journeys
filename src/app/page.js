@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Eco India Journeys",
-  description: `Eco India Journeys is a Travel Agency, registered under UT Ladakh, India Government. Over 15 years experience in Motorbike, trekking and Culture tours around Himalayas.`,
+  description: `Eco India Journeys is a Travel Agency, registered under UT Ladakh, India Government`,
 };
 
 import { allItineraries } from "contentlayer/generated";
