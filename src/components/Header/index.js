@@ -5,7 +5,7 @@ import { MoonIcon, SunIcon } from "../Icons";
 import siteMetadata from "@/src/utils/siteMetaData";
 import { useThemeSwitch } from "../Hooks/useThemeSwitch";
 import { cx } from "@/src/utils";
-
+// import { useState, useEffect } from "react";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
@@ -28,11 +28,30 @@ function classNames(...classes) {
 export default function Header() {
   const [mode, setMode] = useThemeSwitch();
 
+  // const [scrolled, setScrolled] = useState(false);
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const isScrolled = window.scrollY > 0;
+  //     setScrolled(isScrolled);
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
   return (
-    <Disclosure as="nav" className="dark:text-light shadow-md w-full">
+    <Disclosure as="nav" className="dark:text-light">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 shadow-md w-full">
+            {/* <div
+            className={`mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 w-full shadow-md  fixed top-0 z-10 transition-all duration-300 ${
+              scrolled ? "dark:bg-gray-800" : "bg-transparent"
+            }`}
+          > */}
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset dark:focus:ring-white">
