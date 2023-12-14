@@ -36,7 +36,7 @@ const data = [
   },
   {
     _id: "escape-ladakh-on-a-motorcycle-tour/index.mdx",
-    title: "Escape to Ladakh on a Motorcycle Tour 8D/7N - 2024",
+    title: "Ladakh Motorcycle Tour 8D/7N - 2024",
     url: "/itineraries/escape-ladakh-on-a-motorcycle-tour",
     image: {
       filePath: "../public/tours/motorbikepangong1.png",
