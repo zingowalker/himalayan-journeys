@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Eco India Journeys",
-  description: `Eco India Journeys is a Travel Agency, registered under UT Ladakh, India Government`,
+  description: `Eco India Journeys is a Travel Agency, based in Leh. Registered under UT Ladakh, India Government`,
 };
 
 import { allItineraries } from "contentlayer/generated";
@@ -14,7 +14,7 @@ import Slider from "../components/Slider";
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center">
-      <Slider itineraries={allItineraries}/>
+      <Slider itineraries={allItineraries} />
       {/* <HomeCover itineraries={allItineraries} /> */}
       <Featured itineraries={allItineraries} />
       <LatestItinerary itineraries={allItineraries} />

@@ -28,7 +28,7 @@ const HomeCover = ({ itineraries }) => {
           priority
         />
 
-        <div className="w-full lg:w-3/4 p-6 sm:p-8 md:p-12  lg:p-16 flex flex-col items-start justify-center z-0 text-light">
+        <div className="w-full lg:w-3/4 p-6 sm:p-8 md:p-12 lg:p-16 flex flex-col items-start justify-center z-0 text-light">
           <Tag
             link={`/categories/${slug(itinerary.tags[0])}`}
             name={itinerary.tags[0]}

@@ -6,7 +6,7 @@ import Link from "next/link";
 const data = [
   {
     _id: "snow-leopard-expedition/index.mdx",
-    title: "Snow Leopard Expedition 11D/10N",
+    title: "Snow Leopard Expedition 11D/10N - 2024",
     url: "/itineraries/snow-leopard-expedition",
     image: {
       filePath: "../public/tours/snow-leopard-Ladakh1.jpg",
@@ -22,7 +22,7 @@ const data = [
   {
     _id: "9-day-chaddar-trek/index.mdx",
     url: "/itineraries/9-day-chaddar-trek",
-    title: "Chadar a frozen river trek 2024 9-day",
+    title: "Chadar a frozen river trek 9D/8N - 2024 ",
     image: {
       filePath: "../public/tours/chadar3.png",
       relativeFilePath: "../../public/tours/chadar3.png",
@@ -36,7 +36,7 @@ const data = [
   },
   {
     _id: "escape-ladakh-on-a-motorcycle-tour/index.mdx",
-    title: "Escape Ladakh on a Motorcycle Tour",
+    title: "Escape to Ladakh on a Motorcycle Tour 8D/7N - 2024",
     url: "/itineraries/escape-ladakh-on-a-motorcycle-tour",
     image: {
       filePath: "../public/tours/motorbikepangong1.png",
@@ -64,21 +64,20 @@ const Slider = () => {
   }, []);
 
   return (
-    <div className="flex flex-col h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] lg:flex-row">
+    <div className="flex flex-col h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] lg:flex-row shadow-emerald-900">
       {/* TEXT CONTAINER */}
-      <div className="flex-1 flex items-center justify-center flex-col gap-4 text-orange-500 font-bold w-full">
-        <h1 className="text-2xl text-center uppercase p-4 md:p-10 md:text-6xl xl:text-7xl">
+      <div className="flex-1 flex items-center justify-center flex-col gap-4 text-orange-500 font-semibold w-full">
+        <h1 className="text-lg text-center uppercase p-4 md:p-10 md:text-3xl xl:text-6xl">
           {data[currentSlide].title}
         </h1>
-        {/* <button className="bg-red-500 text-white py-4 px-8">Know More</button> */}
         <Link href={data[currentSlide].url}>
-          <button className="capitalize text-sm bg-red-500 text-white py-4 px-8">
+          <button className="capitalize py-4 px-6 rounded-xl bg-transparent text-dark dark:text-light font-bold border-2 border-solid dark:border-light border-gray hover:scale-105 transition-all ease duration-200 text-sm sm:text-base">
             Know More
           </button>
         </Link>
       </div>
       {/* IMAGE CONTAINER */}
-      <div className="w-full flex-1 relative">
+      <div className="w-full flex-1 relative shadow-md">
         <Image
           src={data[currentSlide].image.filePath.replace("../public", "")}
           alt={data[currentSlide].title}
