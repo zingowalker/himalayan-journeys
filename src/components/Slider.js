@@ -64,14 +64,14 @@ const Slider = () => {
   }, []);
 
   return (
-    <div className="flex flex-col h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] lg:flex-row shadow-emerald-900">
+    <div className="flex flex-col h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] lg:flex-row">
       {/* TEXT CONTAINER */}
       <div className="flex-1 flex items-center justify-center flex-col gap-4 text-orange-500 font-semibold w-full">
         <h1 className="text-lg text-center uppercase p-4 md:p-10 md:text-3xl xl:text-6xl">
           {data[currentSlide].title}
         </h1>
         <Link href={data[currentSlide].url}>
-          <button className="capitalize py-4 px-6 rounded-xl bg-transparent text-dark dark:text-light font-bold border-2 border-solid dark:border-light border-gray hover:scale-105 transition-all ease duration-200 text-sm sm:text-base">
+          <button className="py-2 sm:py-3 px-6 sm:px-10 bg-dark text-light rounded-full capitalize font-semibold border-2 border-solid border-light hover:scale-105 transition-all ease duration-200 text-sm sm:text-base">
             Know More
           </button>
         </Link>
