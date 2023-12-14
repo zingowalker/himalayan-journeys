@@ -161,11 +161,12 @@ export default function Footer() {
               <nav className="flex flex-col gap-4">
                 <div>
                   <Link
-                    href="https://wa.me/8587044340"
-                    target="_blank"
+                    href="https://wa.me/918587044340"
+                    target="_SEJ"
+                    rel="noreferrer"
                     className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
                   >
-                    Chat
+                    Whats App
                   </Link>
                 </div>
               </nav>
