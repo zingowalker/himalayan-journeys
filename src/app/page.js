@@ -4,16 +4,18 @@ export const metadata = {
 };
 
 import { allItineraries } from "contentlayer/generated";
-import HomeCover from "../components/Home/HomeCover";
+// import HomeCover from "../components/Home/HomeCover";
 import Featured from "../components/Home/Featured";
 import LatestItinerary from "../components/Home/LatestItinerary";
 import Adventure from "../components/Home/Adventure";
 import Trekking from "../components/Home/Trekking";
+import Slider from "../components/Slider";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center">
-      <HomeCover itineraries={allItineraries} />
+      <Slider itineraries={allItineraries}/>
+      {/* <HomeCover itineraries={allItineraries} /> */}
       <Featured itineraries={allItineraries} />
       <LatestItinerary itineraries={allItineraries} />
       <Adventure itineraries={allItineraries} />
