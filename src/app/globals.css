@@ -18,24 +18,41 @@ h3 > a {
   text-decoration: none !important;
 }
 
-/* width */
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 5px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
   background: #999;
   border-radius: 2px;
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   background: #f97316;
   border-radius: 2px;
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+body::-webkit-scrollbar-thumb:hover {
   background: #ea580c;
+}
+
+/* Standard scrollbar styles */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #f97316 #999;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #999;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #f97316;
 }

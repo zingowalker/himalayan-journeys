@@ -4,13 +4,15 @@ import { sortItineraries } from "../../utils";
 import Link from "next/link";
 import Image from "next/image";
 
-const TopTenTrekkingLadakh = ({ itineraries }) => {
+const TrekkingInLadakh = ({ itineraries }) => {
   const sortedItineraries = sortItineraries(itineraries);
   return (
     <section className="w-full p-6 mt-16 sm:mt-24 md:mt-32 px-5 sm:px-10 md:px-24 sxl:px-32 flex flex-col items-center justify-center dark:text-light">
       <div className="w-full inline-block">
-        <div>
-          <h2 className="text-xl font-bold">Top 10 Trekking in Ladakh</h2>
+        <div className="mb-2">
+          <h2 className="ont-bold text-2xl md:text-4xl text-dark dark:text-light">
+            Trekking in Ladakh
+          </h2>
         </div>
         <div className="">
           <p className="font-normal text-sm md:text-2xl text-dark dark:text-light">
@@ -20,7 +22,7 @@ const TopTenTrekkingLadakh = ({ itineraries }) => {
         </div>
       </div>
 
-      <div className="flex space-x-6 py-4 overflow-x-scroll">
+      <div className="flex space-x-4 py-5 overflow-x-scroll">
         {sortedItineraries.slice(9, 16).map((itinerary, index) => (
           <div key={index} className="space-y-1 shrink-0 cursor-pointer">
             <Link href={itinerary.url} className="overflow-hidden">
@@ -55,4 +57,4 @@ const TopTenTrekkingLadakh = ({ itineraries }) => {
   );
 };
 
-export default TopTenTrekkingLadakh;
+export default TrekkingInLadakh;

@@ -8,7 +8,7 @@ import Featured from "../components/Home/Featured";
 import LatestItinerary from "../components/Home/LatestItinerary";
 import Adventure from "../components/Home/Adventure";
 import Slider from "../components/Slider";
-import TopTenTrekkingLadakh from "../components/Home/TopTenTrekkingLadakh";
+import TrekkingInLadakh from "../components/Home/TrekkingInLadakh";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <Featured itineraries={allItineraries} />
       <LatestItinerary itineraries={allItineraries} />
       <Adventure itineraries={allItineraries} />
-      <TopTenTrekkingLadakh itineraries={allItineraries} />
+      <TrekkingInLadakh itineraries={allItineraries} />
     </main>
   );
 }
