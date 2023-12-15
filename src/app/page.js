@@ -14,10 +14,10 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center">
       <Slider itineraries={allItineraries} />
+      <TrekkingInLadakh itineraries={allItineraries} />
       <Featured itineraries={allItineraries} />
       <LatestItinerary itineraries={allItineraries} />
       <Adventure itineraries={allItineraries} />
-      <TrekkingInLadakh itineraries={allItineraries} />
     </main>
   );
 }

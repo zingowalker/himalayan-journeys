@@ -23,7 +23,7 @@ const TrekkingInLadakh = ({ itineraries }) => {
       </div>
 
       <div className="flex space-x-4 py-5 overflow-x-scroll">
-        {sortedItineraries.slice(9, 16).map((itinerary, index) => (
+        {sortedItineraries.slice(12, 16).map((itinerary, index) => (
           <div key={index} className="space-y-1 shrink-0 cursor-pointer">
             <Link href={itinerary.url} className="overflow-hidden">
               <Image
