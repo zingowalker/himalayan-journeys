@@ -6,3 +6,5 @@
 pss = CHMpmNylYtNnI1S3
 
 
+      {/* <HomeCover itineraries={allItineraries} /> */}
+      {/* <Trekking itineraries={allItineraries} /> */}
