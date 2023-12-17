@@ -13,17 +13,17 @@ const HomeCover = () => {
         setCurrentSlide((prev) =>
           prev === homeCoverData.length - 1 ? 0 : prev + 1
         ),
-      4000
+      3000
     );
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="w-full inline-block">
-      <article className="flex flex-col items-start justify-end mx-5 sm:mx-10 relative h-[60vh] sm:h-[85vh]">
+    <div className="max-w-7xl mx-auto inline-block mt-4">
+      <article className="flex flex-col items-start justify-end mx-5 sm:mx-15 relative h-[60vh] sm:h-[85vh]">
         <div
           className="absolute top-0 left-0 bottom-0 right-0 h-full
-            bg-gradient-to-b from-transparent from-0% to-dark/90 z-0"
+            bg-gradient-to-b from-transparent from-0% to-dark/70 z-0"
         />
         <Image
           src={homeCoverData[currentSlide].image.filePath.replace(
@@ -34,7 +34,7 @@ const HomeCover = () => {
           placeholder="blur"
           blurDataURL={homeCoverData[currentSlide].image.blurhashDataUrl}
           fill
-          className="w-full h-full object-center object-cover -z-10"
+          className="w-full h-auto object-center object-cover"
           sizes="100vw"
           priority
         />
@@ -50,7 +50,7 @@ const HomeCover = () => {
               </span>
             </h1>
           </Link>
-          <p className="line-clamp-2 sm:inline-block mt-4 md:text-lg lg:text-xl font-in md:line-clamp-3">
+          <p className="sm:inline-block mt-4 md:text-lg lg:text-xl font-in md:line-clamp-2 text-gray-400 hidden">
             {homeCoverData[currentSlide].desc}
           </p>
         </div>

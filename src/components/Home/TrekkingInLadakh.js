@@ -37,7 +37,7 @@ const TrekkingInLadakh = () => {
               />
               <p className="font-bold">{item.title}</p>
             </Link>
-            <p className="">Grade: {item.grade}</p>
+            <p className="">Difficulty Level: {item.grade}</p>
             <p className="font-light text-sm">Best time: {item.bestTime}</p>
           </div>
         ))}

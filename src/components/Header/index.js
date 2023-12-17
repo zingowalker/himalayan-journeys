@@ -28,10 +28,13 @@ export default function Header() {
   const [mode, setMode] = useThemeSwitch();
 
   return (
-    <Disclosure as="nav" className="dark:text-light">
+    <Disclosure
+      as="nav"
+      className="text-light w-full fixed top-0 left-0 right-0 z-50 bg-[#013B94]"
+    >
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 shadow-md">
+          <div className="w-full px-2 sm:px-6 lg:px-8 shadow-md">
             {/* <div
             className={`mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 w-full shadow-md  fixed top-0 z-10 transition-all duration-300 ${
               scrolled ? "dark:bg-gray-800" : "bg-transparent"
