@@ -19,8 +19,8 @@ const HomeCover = () => {
   }, []);
 
   return (
-    <div className="w-full inline-block overflow-x-hidden ">
-      <article className="flex flex-col items-start justify-end mx-5 sm:mx-2 relative h-[60vh] sm:h-[85vh]">
+    <div className="w-full inline-block overflow-hidden">
+      <article className="flex flex-col items-start justify-end mx-5 sm:mx-0 relative h-[60vh] sm:h-[85vh]">
         <div
           className="absolute top-0 left-0 bottom-0 right-0 h-full
             bg-gradient-to-b from-transparent from-0% to-dark/70 z-0"
