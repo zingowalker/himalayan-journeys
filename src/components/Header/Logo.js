@@ -14,11 +14,11 @@ const Logo = () => {
           priority
         />
       </div>
-      <span className="font-semibold dark:font-semibold text-sm">
+      <p className="font-semibold dark:font-semibold text-sm uppercase">
         <span className="text-[#84cc16]">Eco</span>
-        <span className="text-light uppercase"> India</span>
+        <span className="text-light"> India</span>
         <span className="text-orange-500"> Journeys</span>
-      </span>
+      </p>
     </Link>
   );
 };

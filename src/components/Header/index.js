@@ -7,6 +7,7 @@ import { useThemeSwitch } from "../Hooks/useThemeSwitch";
 import { cx } from "@/src/utils";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useState, useEffect } from "react";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
@@ -27,10 +28,26 @@ function classNames(...classes) {
 export default function Header() {
   const [mode, setMode] = useThemeSwitch();
 
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 30;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <Disclosure
       as="nav"
-      className="text-light w-full fixed top-0 left-0 right-0 z-50 bg-[#013B94]"
+      className={`text-light w-full fixed top-0 left-0 right-0 z-50  transition-all duration-300 overflow-x-hidden ${
+        scrolled ? "bg-[#013B94]" : "bg-transparent"
+      }`}
     >
       {({ open }) => (
         <>

@@ -19,8 +19,8 @@ const HomeCover = () => {
   }, []);
 
   return (
-    <div className="max-w-7xl mx-auto inline-block mt-4">
-      <article className="flex flex-col items-start justify-end mx-5 sm:mx-15 relative h-[60vh] sm:h-[85vh]">
+    <div className="w-full inline-block">
+      <article className="flex flex-col items-start justify-end mx-5 sm:mx-10 relative h-[60vh] sm:h-[85vh]">
         <div
           className="absolute top-0 left-0 bottom-0 right-0 h-full
             bg-gradient-to-b from-transparent from-0% to-dark/70 z-0"
@@ -34,7 +34,7 @@ const HomeCover = () => {
           placeholder="blur"
           blurDataURL={homeCoverData[currentSlide].image.blurhashDataUrl}
           fill
-          className="w-full h-auto object-center object-cover"
+          className="w-full h-full object-center object-cover -z-10"
           sizes="100vw"
           priority
         />

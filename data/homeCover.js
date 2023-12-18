@@ -21,7 +21,7 @@ export const homeCoverData = [
     url: "/itineraries/9-day-chaddar-trek",
     tag: "Chadar Trek",
     desc: "In the heart of Ladakh lie enchanting natural wonders, but amidst its magic, the most treasured gem is the Chadar Trek. This expedition weaves a tale of resilience and survival—mastering the art of enduring frigid terrains, engaging with locals, delving into their unique way of life. Imagine traversing one of the world's harshest landscapes, a frozen gorge with cascading waterfalls, where the icy Zanskar trail resembles a surreal Chadar, experience",
-    title: "Chadar trek 9D/8N",
+    title: "Chadar a frozen river trek 9D/8N",
     image: {
       filePath: "../public/tours/chadar3.png",
       relativeFilePath: "../../public/tours/chadar3.png",
