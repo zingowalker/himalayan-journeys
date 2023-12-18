@@ -45,18 +45,13 @@ export default function Header() {
   return (
     <Disclosure
       as="nav"
-      className={`text-light w-full fixed top-0 left-0 right-0 z-50 transition-all ease-in-out delay-500 ${
-        scrolled ? "bg-[#013B94]" : "bg-transparent"
+      className={`text-dark w-full fixed top-0 left-0 right-0 z-50 transition-all ease-in-out delay-500 ${
+        scrolled ? "bg-[#013B94]" : "bg-softBg"
       }`}
     >
       {({ open }) => (
         <>
           <div className="w-full px-2 sm:px-6 lg:px-8 shadow-md">
-            {/* <div
-            className={`mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 w-full shadow-md  fixed top-0 z-10 transition-all duration-300 ${
-              scrolled ? "dark:bg-gray-800" : "bg-transparent"
-            }`}
-          > */}
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset dark:focus:ring-white">

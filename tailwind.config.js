@@ -8,12 +8,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        dark: "#1b1b1b",
-        light: "#fff",
+        dark: "#0f172a",
+        light: "#a8a29e",
         accent: "#a16207",
         accentDark: "#ffdb4d",
         gray: "#747474",
         amber: "#C97219",
+        softBg: "#f0f0f0",
+        softTextColor: "#626262",
       },
       fontFamily: {
         mr: ["var(--font-mr)"],

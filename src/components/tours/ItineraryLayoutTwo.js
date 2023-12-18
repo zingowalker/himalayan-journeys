@@ -23,7 +23,7 @@ const ItineraryLayoutTwo = ({ itinerary }) => {
       </Link>
 
       <div className="col-span-12 lg:col-span-8 w-full">
-        <span className="inline-block w-full uppercase text-orange-500 dark:text-accentDark font-semibold text-xs sm:text-sm">
+        <span className="inline-block w-full uppercase  dark:text-accentDark font-semibold text-xs sm:text-sm">
           {itinerary.tags[0]}
         </span>
         <Link href={itinerary.url} className="inline-block my-1">

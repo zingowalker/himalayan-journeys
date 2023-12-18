@@ -61,7 +61,7 @@ export default function Footer() {
                 </a>
               </div>{" "}
               <br />
-              <blockquote className="capitalize text-orange-500">
+              <blockquote className="uppercase">
                 We are mostly active on instagram
               </blockquote>
             </div>
