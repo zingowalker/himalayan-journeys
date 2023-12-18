@@ -26,8 +26,8 @@ export const trekData = [
   {
     id: 4,
     src: "/tours/sham-trek1.png",
-    title: "Sham valley trek",
-    url: "/itineraries/rumtse-tsomoriri-trek",
+    title: "Sham valley trek 3D/2N",
+    url: "/itineraries/sham-valley-trek",
     grade: "1",
     bestTime: "All year round",
   },
