@@ -1,5 +1,6 @@
 export const metadata = {
-  title: "Eco India Journeys",
+  title:
+    "Eco India Journeys: Trekking, Mountaineering, Package Tours, Motorcycle adventures",
   description: `Eco India Journeys is a Travel Agency, based in Leh. Registered under UT Ladakh, India Government`,
 };
 
