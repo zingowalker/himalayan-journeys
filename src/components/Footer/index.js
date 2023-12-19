@@ -12,8 +12,8 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="md:mt-8 bg-[#013B94]">
-      <div className="pt-12 lg:pt-16 text-sm text-light ">
+    <footer className="md:mt-8 dark:text-light">
+      <div className="pt-12 lg:pt-16 text-sm">
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="mb-16 grid grid-cols-2 gap-12 md:grid-cols-4 lg:grid-cols-6 lg:gap-8">
             <div className="col-span-full lg:col-span-2">
@@ -57,17 +57,17 @@ export default function Footer() {
                   aria-label="Check our profile on Facebook"
                   target="_blank"
                 >
-                  <AiOutlineFacebook className="dar:fill-light cursor-pointer" />
+                  <AiOutlineFacebook className="dark:fill-light cursor-pointer" />
                 </a>
               </div>{" "}
               <br />
-              <blockquote className="uppercase">
+              <blockquote className="uppercase dark:text-accentDark">
                 We are mostly active on instagram
               </blockquote>
             </div>
 
             <div>
-              <div className="mb-4 font-bold uppercase tracking-widest text-gray-800">
+              <div className="mb-4 font-bold dark:text-accentDark uppercase tracking-widest text-gray-800">
                 Destination
               </div>
 
@@ -120,7 +120,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <div className="mb-4 font-bold uppercase tracking-widest text-gray-800">
+              <div className="mb-4 font-bold dark:text-accentDark uppercase tracking-widest text-gray-800">
                 Company
               </div>
 
@@ -154,7 +154,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <div className="mb-4 font-bold uppercase tracking-widest text-gray-800">
+              <div className="mb-4 dark:text-accentDark font-bold uppercase tracking-widest text-gray-800">
                 Support
               </div>
 
@@ -172,7 +172,7 @@ export default function Footer() {
               </nav>
             </div>
             <div>
-              <div className="mb-4 font-bold uppercase tracking-widest text-gray-800">
+              <div className="mb-4 dark:text-accentDark font-bold uppercase tracking-widest text-gray-800">
                 Discover
               </div>
 
@@ -190,7 +190,7 @@ export default function Footer() {
               </nav>
             </div>
             <div>
-              <div className="mb-4 font-bold uppercase tracking-widest text-gray-800">
+              <div className="mb-4 font-bold dark:text-accentDark uppercase tracking-widest text-gray-800">
                 Legal
               </div>
 

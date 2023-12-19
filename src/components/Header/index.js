@@ -45,8 +45,8 @@ export default function Header() {
   return (
     <Disclosure
       as="nav"
-      className={`text-dark w-full fixed top-0 left-0 right-0 z-50 transition-all ease-in-out delay-500 ${
-        scrolled ? "bg-[#013B94]" : "bg-softBg"
+      className={`dark:text-orange-500 text-dark w-full fixed top-0 left-0 right-0 z-50 transition-all ease-in-out delay-500 ${
+        scrolled ? "bg-softBg" : "bg-transparent"
       }`}
     >
       {({ open }) => (
@@ -57,9 +57,15 @@ export default function Header() {
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset dark:focus:ring-white">
                   <span className="absolute -inset-0.5" />
                   {open ? (
-                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                    <XMarkIcon
+                      className="block h-6 w-6 dark:text-white"
+                      aria-hidden="true"
+                    />
                   ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                    <Bars3Icon
+                      className="block h-6 w-6 dark:text-white"
+                      aria-hidden="true"
+                    />
                   )}
                 </Disclosure.Button>
               </div>
@@ -75,8 +81,8 @@ export default function Header() {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "dark:text-light"
-                            : "hover:text-orange-500",
+                            ? "dark:text-orange-500"
+                            : "hover:text-light",
                           "rounded-md px-4 py-2 text-base font-bold capital"
                         )}
                         aria-current={item.current ? "page" : undefined}
@@ -117,7 +123,7 @@ export default function Header() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? " dark:text-white" : "hover:text-orange-500",
+                    item.current ? " dark:text-orange-500" : "hover:text-light",
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
