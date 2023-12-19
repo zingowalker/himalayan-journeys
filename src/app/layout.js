@@ -3,9 +3,10 @@ import { cx } from "../../src/utils";
 import Header from "../../src/components/Header";
 import Footer from "../../src/components/Footer";
 import siteMetadata from "../utils/siteMetaData";
-import { Inter, Manrope, Roboto } from "next/font/google";
+import { Inter, Roboto } from "next/font/google";
 import { Suspense } from "react";
 import Loading from "./loading";
+import Script from "next/script";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -29,13 +30,10 @@ export const metadata = {
   description: siteMetadata.description,
   openGraph: {
     title: siteMetadata.title,
-    description: [
-      siteMetadata.description,
-      "travel with peace of mind and leave the rest to us when booking with us.",
-    ],
+    description: siteMetadata.description,
     url: siteMetadata.siteUrl,
     siteName: siteMetadata.title,
-    images: [siteMetadata.siteLogo],
+    images: [siteMetadata.socialBanner],
     locale: "en_US",
     type: "website",
   },
@@ -68,6 +66,13 @@ export default function RootLayout({ children }) {
           "font-mr bg-light dark:bg-dark"
         )}
       >
+        <Script id="theme-switcher" strategy="beforeInteractive">
+          {`if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+  }`}
+        </Script>
         <Header />
         <Suspense fallback={<Loading />}>{children}</Suspense>
         <Footer />

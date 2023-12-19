@@ -6,7 +6,7 @@ import React from "react";
 const ItineraryLayoutThree = ({ itinerary }) => {
   return (
     <div className="group flex flex-col items-center text-dark dark:text-light">
-      <Link href={itinerary.url} className="h-full rounded-xl overflow-hidden">
+      <Link href={itinerary.url} className="h-full overflow-hidden ">
         <Image
           src={itinerary.image.filePath.replace("../public", "")}
           placeholder="blur"
@@ -19,20 +19,20 @@ const ItineraryLayoutThree = ({ itinerary }) => {
         />
       </Link>
 
-      <div className="flex flex-col w-full mt-4">
-        <span className="uppercase dark:text-accentDark font-semibold text-xs sm:text-sm">
+      <div className="flex flex-col w-full mt-4 shadow-md">
+        <span className="uppercase dark:text-accentDark font-bold text-xs sm:text-sm">
           {itinerary.tags[0]}
         </span>
         <Link href={itinerary.url} className="inline-block my-1">
-          <h2 className="font-semibold text-base line-clamp-3 sm:text-lg">
-            <span className="cursor-pointer">{itinerary.description}</span>
+          <h2 className="font-semibold text-base line-clamp-6 sm:text-lg">
+            <span className="cursor-pointer ">{itinerary.description}</span>
           </h2>
         </Link>
 
-        <span className="capitalize text-gray dark:text-light/50 font-semibold text-sm  sm:text-base">
-          {/* {format(new Date(itinerary.publishedAt), "MMMM dd, yyyy")}{" "}
-          {itinerary.author} */}
-        </span>
+        {/* <span className="capitalize text-gray dark:text-light/50 font-semibold text-sm  sm:text-base">
+          {format(new Date(itinerary.publishedAt), "MMMM dd, yyyy")}{" "}
+          {itinerary.author}
+        </span> */}
       </div>
     </div>
   );
