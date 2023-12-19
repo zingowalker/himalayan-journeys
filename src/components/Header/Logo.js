@@ -14,9 +14,9 @@ const Logo = () => {
           priority
         />
       </div>
-      <p className="font-semibold dark:font-semibold text-sm uppercase">
+      <p className="font-extrabold text-sm uppercase">
         <span className="text-[#84cc16]">Eco</span>
-        <span className="dark:text-light"> India</span>
+        <span className="text-white"> India</span>
         <span className="text-orange-500"> Journeys</span>
       </p>
     </Link>
