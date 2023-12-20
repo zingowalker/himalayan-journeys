@@ -68,14 +68,14 @@ export default function Header() {
                   <Logo />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex px-4 py-4 items-center justify-between">
+                  <div className="flex px-4 py-4 items-center justify-between  font-bold">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
                         className={classNames(
                           item.current ? "text-white" : "hover:text-light",
-                          "rounded-md px-4 py-2 text-base capital font-bold"
+                          "rounded-md px-4 py-2 text-base capital"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -108,7 +108,7 @@ export default function Header() {
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2 ">
+            <div className="space-y-1 px-2 pb-3 pt-2 font-bold">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
@@ -116,7 +116,7 @@ export default function Header() {
                   href={item.href}
                   className={classNames(
                     item.current ? "text-white" : "hover:text-light",
-                    "block rounded-md px-3 py-2 text-base font-bold"
+                    "block rounded-md px-3 py-2 text-base"
                   )}
                   aria-current={item.current ? "page" : undefined}
                 >

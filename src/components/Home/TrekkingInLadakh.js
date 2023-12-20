@@ -16,7 +16,7 @@ const TrekkingInLadakh = () => {
   // const sortedItineraries = sortItineraries(itineraries);
   return (
     <section className="w-full mt-16 sm:mt-24 md:mt-32 px-5 sm:px-10 md:px-24 sxl:px-32 flex flex-col items-center justify-center text-dark dark:text-light">
-      <div className="w-full inline-block">
+      <div className="w-full inline-block  overscroll-x-auto md:overscroll-x-contain">
         <h2 className="w-full inline-block font-bold capitalize text-2xl md:text-4xl ">
           Trekking in Ladakh
         </h2>
@@ -35,9 +35,7 @@ const TrekkingInLadakh = () => {
                 src={item.src}
                 alt=""
               />
-              <p className="font-bold dark:text-accentDark">
-                {item.title}
-              </p>
+              <p className="font-bold dark:text-accentDark">{item.title}</p>
             </Link>
             <p className="">Difficulty Level: {item.grade}</p>
             <p className="font-light text-sm">Best time: {item.bestTime}</p>

@@ -31,4 +31,12 @@ export const trekData = [
     grade: "1",
     bestTime: "All year round",
   },
+  {
+    id: 5,
+    src: "/tours/jhunglam-trek.png",
+    title: "Jhunglam trek 8D/7N",
+    url: "/itineraries/jhunglam-trek",
+    grade: "4",
+    bestTime: "July to end of Sep",
+  },
 ];
