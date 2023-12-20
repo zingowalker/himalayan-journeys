@@ -15,8 +15,8 @@ import { trekData } from "@/data/trekData";
 const TrekkingInLadakh = () => {
   // const sortedItineraries = sortItineraries(itineraries);
   return (
-    <section className="w-full mt-16 sm:mt-24 md:mt-32 px-5 sm:px-10 md:px-24 sxl:px-32 flex flex-col items-center justify-center text-dark dark:text-light">
-      <div className="w-full inline-block  overscroll-x-auto md:overscroll-x-contain">
+    <section className="overflow-hidden w-full mt-16 sm:mt-24 md:mt-32 px-5 sm:px-10 md:px-24 sxl:px-32 flex flex-col items-center justify-center text-dark dark:text-light">
+      <div className="w-full inline-block overflow-hidden">
         <h2 className="w-full inline-block font-bold capitalize text-2xl md:text-4xl ">
           Trekking in Ladakh
         </h2>
@@ -25,7 +25,7 @@ const TrekkingInLadakh = () => {
         </p>
       </div>
 
-      <article className="flex space-x-4 py-5 overflow-x-scroll scroll-smooth mt-10 sm:mt-16 max-w-7xl mx-auto p-6">
+      <article className="flex space-x-4 py-5 overflow-x-scroll mt-10 sm:mt-16 max-w-7xl mx-auto p-8 px-3">
         {trekData.map((item) => (
           <div key={item.id} className="space-y-1 shrink-0 cursor-pointer">
             <Link href={item.url}>
@@ -33,7 +33,7 @@ const TrekkingInLadakh = () => {
                 key={item.id}
                 className="w-64 h-40 object-cover rounded-lg pb-2"
                 src={item.src}
-                alt=""
+                alt={item.title}
               />
               <p className="font-bold dark:text-accentDark">{item.title}</p>
             </Link>

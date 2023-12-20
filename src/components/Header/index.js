@@ -45,7 +45,7 @@ export default function Header() {
   return (
     <Disclosure
       as="nav"
-      className={`font-bold text-white w-full fixed top-0 left-0 right-0 z-50 transition-all ease-in-out delay-500 ${
+      className={`w-full text-white fixed top-0 left-0 right-0 z-50 transition-all ease-in-out delay-500 ${
         scrolled ? "bg-transparent" : "bg-transparent"
       }`}
     >
@@ -54,12 +54,18 @@ export default function Header() {
           <div className="w-full px-2 sm:px-6 lg:px-8 shadow-md">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset dark:focus:ring-white">
+                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
                   {open ? (
-                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                    <XMarkIcon
+                      className="block h-6 w-6 bg-dark text-light"
+                      aria-hidden="true"
+                    />
                   ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                    <Bars3Icon
+                      className="block h-6 w-6 bg-dark text-light"
+                      aria-hidden="true"
+                    />
                   )}
                 </Disclosure.Button>
               </div>
@@ -74,8 +80,8 @@ export default function Header() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? "text-white" : "hover:text-light",
-                          "rounded-md px-4 py-2 text-base capital"
+                          item.current ? "text-white" : "hover:text-dark",
+                          "rounded-md px-4 py-2 capital font-extrabold"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -93,7 +99,7 @@ export default function Header() {
                     "relative  w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1 focus:outline-none focus:ring-2 dark:focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800",
                     mode === "light"
                       ? "bg-dark text-light"
-                      : "bg-light text-dark"
+                      : "bg-dark text-light"
                   )}
                   aria-label="theme-switcher"
                 >
@@ -115,8 +121,8 @@ export default function Header() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? "text-white" : "hover:text-light",
-                    "block rounded-md px-3 py-2 text-base"
+                    item.current ? "text-white" : "hover:text-dark",
+                    "block rounded-md px-3 py-2 font-extrabold"
                   )}
                   aria-current={item.current ? "page" : undefined}
                 >
