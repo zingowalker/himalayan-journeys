@@ -25,7 +25,7 @@ const TrekkingInLadakh = () => {
         </p>
       </div>
 
-      <article className="flex space-x-4 py-5 overflow-x-scroll mt-10 sm:mt-16 max-w-7xl mx-auto p-8 px-3">
+      <article className="flex space-x-4 py-5 overflow-x-scroll hide-scroll-bar mt-10 sm:mt-16 max-w-7xl mx-auto p-8 px-3">
         {trekData.map((item) => (
           <div key={item.id} className="space-y-1 shrink-0 cursor-pointer">
             <Link href={item.url}>

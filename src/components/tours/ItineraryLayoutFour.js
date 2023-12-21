@@ -18,11 +18,11 @@ const ItineraryLayoutFour = ({ itinerary }) => {
         />
       </Link>
 
-      <div className="flex flex-col w-full mt-4 shadow-md">
-        <span className="uppercase dark:text-accentDark font-bold text-xs sm:text-sm">
+      <div className="flex flex-col w-full mt-4 shadow-md px-2">
+        <span className="uppercase dark:text-accentDark font-bold text-xs sm:text-sm border-b">
           {itinerary.tags[0]}
         </span>
-        <Link href={itinerary.url} className="inline-block my-1">
+        <Link href={itinerary.url} className="inline-block my-2">
           <h2 className="font-semibold text-base line-clamp-6 sm:text-lg">
             <span className="cursor-pointer">{itinerary.description}</span>
           </h2>
