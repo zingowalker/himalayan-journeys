@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { IoArrowUpCircle } from "react-icons/io5";
 
 export default function ScrollToTop() {
   const [showButton, setShowButton] = useState(false);
@@ -32,16 +33,9 @@ export default function ScrollToTop() {
           onClick={() => {
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
           }}
-          className="fixed bottom-5 right-5 bg-stone-700 dark:bg-gray-100 text-white px-4 py-2 rounded-lg shadow-lg"
+          className="fixed bottom-5 right-5"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="8"
-            height="8"
-            viewBox="0 0 24 24"
-          >
-            <path d="M12 2L0 14h6v8h12v-8h6z" fill="#fff" />
-          </svg>
+          <IoArrowUpCircle className="h-6 w-6" />
         </button>
       )}
     </div>

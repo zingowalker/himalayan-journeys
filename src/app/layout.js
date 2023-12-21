@@ -5,7 +5,6 @@ import Footer from "../../src/components/Footer";
 import siteMetadata from "../utils/siteMetaData";
 import { Inter, Roboto } from "next/font/google";
 import { Suspense } from "react";
-import Loading from "./loading";
 import Script from "next/script";
 
 const inter = Inter({
@@ -74,7 +73,7 @@ export default function RootLayout({ children }) {
   }`}
         </Script>
         <Header />
-        <Suspense fallback={<Loading />}>{children}</Suspense>
+        {children}
         <Footer />
       </body>
     </html>

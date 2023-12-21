@@ -1,12 +1,13 @@
 "use client";
-import { IoMdCall } from "react-icons/io";
 
 import Logo from "../Header/Logo";
 import ScrollToTop from "../Hooks/ScrollToTop";
-import { BsInstagram } from "react-icons/bs";
-import { FaLinkedin } from "react-icons/fa";
-import { RiTwitterXLine } from "react-icons/ri";
-import { AiOutlineFacebook } from "react-icons/ai";
+import {
+  AiOutlineLinkedin,
+  AiOutlineFacebook,
+  AiOutlineInstagram,
+  AiOutlineTwitter,
+} from "react-icons/ai";
 import siteMetadata from "@/src/utils/siteMetaData";
 import Link from "next/link";
 
@@ -26,9 +27,9 @@ export default function Footer() {
                   <Logo />
                 </a>
               </div>
-              <p className="mb-6 sm:pr-8">
+              <p className="mb-6 sm:pr-8 dark:text-softBg">
                 Member of All Ladakh Tour Operator Association (ALTOA)
-                Registered under UT Leh.
+                Registered under UT Leh-Ladakh, India.
               </p>
               <div className="flex gap-4">
                 <a
@@ -36,28 +37,28 @@ export default function Footer() {
                   aria-label="Check our profile on Instagram"
                   target="_blank"
                 >
-                  <BsInstagram className="dark:fill-light cursor-pointer" />
+                  <AiOutlineInstagram className="dark:fill-softBg cursor-pointer hover:bg-accentDark" />
                 </a>
                 <a
                   href={siteMetadata.linkedin}
                   aria-label="Check our profile on Linkedin"
                   target="_blank"
                 >
-                  <FaLinkedin className="dark:fill-light cursor-pointer" />
+                  <AiOutlineLinkedin className="dark:fill-softBg cursor-pointer hover:bg-accentDark" />
                 </a>
                 <a
                   href={siteMetadata.twitter}
                   aria-label="Check our profile on Twitter"
                   target="_blank"
                 >
-                  <RiTwitterXLine className="dark:fill-light cursor-pointer" />
+                  <AiOutlineTwitter className="dark:fill-softBg cursor-pointer hover:bg-accentDark" />
                 </a>
                 <a
                   href={siteMetadata.facebook}
                   aria-label="Check our profile on Facebook"
                   target="_blank"
                 >
-                  <AiOutlineFacebook className="dark:fill-light cursor-pointer" />
+                  <AiOutlineFacebook className="dark:fill-softBg cursor-pointer hover:bg-accentDark" />
                 </a>
               </div>{" "}
               <br />
@@ -67,7 +68,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <div className="mb-4 font-bold dark:text-accentDark uppercase tracking-widest text-gray-800">
+              <div className="mb-4 font-bold dark:text-accentDark uppercase tracking-widest">
                 Destination
               </div>
 
@@ -75,7 +76,7 @@ export default function Footer() {
                 <div>
                   <a
                     href="#"
-                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
+                    className="dark:text-softBg transition duration-100"
                   >
                     Ladakh
                   </a>
@@ -84,7 +85,7 @@ export default function Footer() {
                 <div>
                   <a
                     href="#"
-                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
+                    className="dark:text-softBg transition duration-100"
                   >
                     Uttarkhand
                   </a>
@@ -93,7 +94,7 @@ export default function Footer() {
                 <div>
                   <a
                     href="#"
-                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
+                    className="dark:text-softBg transition duration-100"
                   >
                     Kerala
                   </a>
@@ -102,7 +103,7 @@ export default function Footer() {
                 <div>
                   <a
                     href="#"
-                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
+                    className="dark:text-softBg transition duration-100"
                   >
                     Northeast
                   </a>
@@ -111,7 +112,7 @@ export default function Footer() {
                 <div>
                   <a
                     href="#"
-                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
+                    className="dark:text-softBg transition duration-100"
                   >
                     Bhutan
                   </a>
@@ -128,7 +129,7 @@ export default function Footer() {
                 <div>
                   <Link
                     href="/about"
-                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
+                    className="dark:text-softBg transition duration-100"
                   >
                     About
                   </Link>
@@ -137,7 +138,7 @@ export default function Footer() {
                   <Link
                     href="https://www.google.com/search?q=ecoindiajourneys%0D%0A%0D%0A&btnK=Google+Search&sca_esv=579484062&sxsrf=AM9HkKkwF5kM5lmChQjgXmqATTb7hG4QKw%3A1699120679242&source=hp&ei=J4ZGZej6DPacseMPpcuigA4&iflsig=AO6bgOgAAAAAZUaUN1hFp94i32Yej2JXoVuaFnEb_nNT#btnK=Google%20Search&lrd=0x38fdebc4481689d9:0x8865dd6bfab06f35,1"
                     target="_blank"
-                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
+                    className="dark:text-softBg transition duration-100"
                   >
                     Reviews
                   </Link>
@@ -145,7 +146,7 @@ export default function Footer() {
                 <div>
                   <Link
                     href="/why-us"
-                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
+                    className="dark:text-softBg transition duration-100"
                   >
                     Why Us
                   </Link>
@@ -154,7 +155,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <div className="mb-4 dark:text-accentDark font-bold uppercase tracking-widest text-gray-800">
+              <div className="mb-4 dark:text-accentDark font-bold uppercase tracking-widest">
                 Support
               </div>
 
@@ -164,7 +165,7 @@ export default function Footer() {
                     href="https://wa.me/918587044340"
                     target="_SEJ"
                     rel="noreferrer"
-                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
+                    className="dark:text-softBg transition duration-100"
                   >
                     Whats App
                   </Link>
@@ -172,7 +173,7 @@ export default function Footer() {
               </nav>
             </div>
             <div>
-              <div className="mb-4 dark:text-accentDark font-bold uppercase tracking-widest text-gray-800">
+              <div className="mb-4 dark:text-accentDark font-bold uppercase tracking-widest">
                 Discover
               </div>
 
@@ -181,7 +182,7 @@ export default function Footer() {
                   <div>
                     <Link
                       href="/faq"
-                      className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
+                      className="dark:text-softBg transition duration-100"
                     >
                       FAQ
                     </Link>
@@ -190,7 +191,7 @@ export default function Footer() {
               </nav>
             </div>
             <div>
-              <div className="mb-4 font-bold dark:text-accentDark uppercase tracking-widest text-gray-800">
+              <div className="mb-4 font-bold dark:text-accentDark uppercase tracking-widest">
                 Legal
               </div>
 
@@ -198,7 +199,7 @@ export default function Footer() {
                 <div>
                   <a
                     href="#"
-                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
+                    className="dark:text-softBg transition duration-100"
                   >
                     Terms of Service
                   </a>
@@ -207,7 +208,7 @@ export default function Footer() {
                 <div>
                   <a
                     href="#"
-                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
+                    className="dark:text-softBg transition duration-100"
                   >
                     Payment Policy
                   </a>
@@ -216,7 +217,7 @@ export default function Footer() {
                 <div>
                   <a
                     href="cancellation-policy"
-                    className="text-gray-500 transition duration-100 hover:text-orange-500 active:text-orange-600"
+                    className="dark:text-softBg transition duration-100"
                   >
                     Cancellation Policy
                   </a>
@@ -225,7 +226,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="border-t py-8 flex items-center justify-center px-2 text-sm text-gray-500">
+          <div className="dark:text-softBg border-t py-8 flex items-center justify-center px-2 text-sm">
             <div>
               &copy; {`${new Date().getFullYear()}`} Eco India Journeys. All
               rights reserved.
