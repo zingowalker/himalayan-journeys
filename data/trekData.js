@@ -41,7 +41,7 @@ export const trekData = [
   },
   {
     id: 6,
-    src: "/tours/jhunglam-trek.png",
+    src: "/tours/rumtse-kibber.png",
     title: "Rumtse to Kibber  14D/13N",
     url: "/itineraries/jhunglam-trek",
     grade: "5",
