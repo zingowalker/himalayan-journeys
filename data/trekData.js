@@ -37,6 +37,14 @@ export const trekData = [
     title: "Jhunglam trek 8D/7N",
     url: "/itineraries/jhunglam-trek",
     grade: "4",
+    bestTime: "Mid-July to end of Sep",
+  },
+  {
+    id: 6,
+    src: "/tours/jhunglam-trek.png",
+    title: "Rumtse to Kibber  14D/13N",
+    url: "/itineraries/jhunglam-trek",
+    grade: "5",
     bestTime: "July to end of Sep",
   },
 ];

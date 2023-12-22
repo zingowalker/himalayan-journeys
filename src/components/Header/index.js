@@ -45,8 +45,8 @@ export default function Header() {
   return (
     <Disclosure
       as="nav"
-      className={`w-full text-softBg fixed top-0 left-0 right-0 z-50 transition-all ease-in-out delay-500 text-bold ${
-        scrolled ? "bg-sky-950" : "bg-transparent"
+      className={`w-full text-softBg fixed top-0 left-0 right-0 z-50 transition-all ease-in delay-500 font-bold ${
+        scrolled ? "bg-sky-900" : "bg-transparent"
       }`}
     >
       {({ open }) => (
@@ -54,31 +54,12 @@ export default function Header() {
           <div className="w-full px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden rounded-full">
-                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2  hover:bg-softBg focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                  <span
-                    className="absolute -inset-0.5"
-                    onClick={() => setMode(mode === "light" ? "dark" : "light")}
-                  />
+                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2  hover:bg-gray focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <span className="absolute -inset-0.5" />
                   {open ? (
-                    <XMarkIcon
-                      className={cx(
-                        "block h-5 w-5",
-                        mode === "light"
-                          ? "bg-softBg text-dark"
-                          : "bg-dark text-light"
-                      )}
-                      aria-hidden="true"
-                    />
+                    <XMarkIcon className="block h-5 w-5" aria-hidden="true" />
                   ) : (
-                    <Bars3Icon
-                      className={cx(
-                        "block h-5 w-5",
-                        mode === "light"
-                          ? "bg-softBg text-dark"
-                          : "bg-dark text-light"
-                      )}
-                      aria-hidden="true"
-                    />
+                    <Bars3Icon className="block h-5 w-5" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
               </div>
@@ -93,7 +74,7 @@ export default function Header() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? "text-white" : "hover:text-light",
+                          item.current ? "text-white" : "hover:underline",
                           "rounded-md px-4 py-2 capital"
                         )}
                         aria-current={item.current ? "page" : undefined}
@@ -127,14 +108,14 @@ export default function Header() {
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
+            <div className="space-y-1 px-2 pb-3 pt-2 font-bold">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? "text-white" : "hover:text-light",
+                    item.current ? "text-white" : "hover:underline",
                     "block rounded-md px-3 py-2 "
                   )}
                   aria-current={item.current ? "page" : undefined}
