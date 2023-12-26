@@ -146,7 +146,7 @@ export default function page() {
     // </main>
     <section
       id="features"
-      className="relative block px-6 py-10 md:py-20 md:px-10  border-t border-b border-neutral-900 bg-neutral-900/30 dark:text-light"
+      className="relative block px-5 py-10 md:mt-32 mt-16 md:py-20 md:px-24 sxl:px-32 border-t border-b border-neutral-900 bg-neutral-900/30 dark:text-light"
     >
       <div className="relative mx-auto max-w-5xl text-center">
         <span className="text-gray-400 my-3 flex items-center justify-center font-medium uppercase tracking-wider">

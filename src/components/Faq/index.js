@@ -87,7 +87,7 @@ const Faq = () => {
   };
 
   return (
-    <section className="p-2 m-8">
+    <section className="p-2 md:mt-32 mt-16 max-w-7xl w-auto m-8">
       <h1 className="text-2xl mb-2 mx-auto dark:text-light">FAQ</h1>
       {accordions.map((accordion) => (
         <Accordion

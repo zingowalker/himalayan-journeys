@@ -51,7 +51,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="mt-8 space-y-4 text-base xs:text-lg sm:text-xl font-medium leading-relaxed font-in"
+      className="mt-12 space-y-4 text-base xs:text-lg sm:text-xl font-medium leading-relaxed font-in"
     >
       <div className=" grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-1">
         <div className="grid w-full  items-center justify-start gap-1.5">
