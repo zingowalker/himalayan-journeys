@@ -24,7 +24,7 @@ const ItineraryLayoutThree = ({ itinerary }) => {
           {itinerary.tags[0]}
         </span>
         <Link href={itinerary.url} className="inline-block my-2">
-          <h2 className="font-semibold text-base line-clamp-6 sm:text-lg">
+          <h2 className="text-base line-clamp-6 sm:text-lg">
             <span className="cursor-pointer ">{itinerary.description}</span>
           </h2>
         </Link>

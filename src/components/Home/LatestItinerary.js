@@ -8,9 +8,9 @@ const LatestItinerary = ({ itineraries }) => {
   return (
     <section className="w-full mt-16 sm:mt-24 md:mt-32 px-5 sm:px-10 md:px-24 sxl:px-32 flex flex-col items-center justify-center z-10">
       <div className="w-full flex justify-between">
-        <h2 className="w-fit inline-block font-bold capitalize text-2xl md:text-4xl text-dark dark:text-light">
+        <h3 className="w-fit inline-block font-bold capitalize text-2xl md:text-4xl text-dark dark:text-light">
           1 Week Tours
-        </h2>
+        </h3>
         <Link
           href="/categories/all"
           className="inline-block font-medium  dark:text-accentDark text-base md:text-lg"

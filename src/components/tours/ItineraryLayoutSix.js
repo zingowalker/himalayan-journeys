@@ -19,15 +19,10 @@ const ItineraryLayoutSix = ({ itinerary }) => {
           {itinerary.tags[0]}
         </span>
         <Link href={itinerary.url} className="inline-block my-1">
-          <h2 className="font-semibold text-base line-clamp-3 sm:text-lg">
+          <h2 className="text-base line-clamp-3 sm:text-lg">
             <span className="cursor-pointer">{itinerary.description}</span>
           </h2>
         </Link>
-
-        <span className="capitalize text-gray dark:text-light/50 font-semibold text-sm  sm:text-base">
-          {/* {format(new Date(itinerary.publishedAt), "MMMM dd, yyyy")}{" "}
-            {itinerary.author} */}
-        </span>
       </div>
     </div>
   );

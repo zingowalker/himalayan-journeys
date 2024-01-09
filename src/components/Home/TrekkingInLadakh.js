@@ -20,7 +20,7 @@ const TrekkingInLadakh = () => {
         <h2 className="w-full inline-block font-bold capitalize text-2xl md:text-4xl mb-3">
           Trekking in Ladakh
         </h2>
-        <p className="font-normal text-lg md:text-2xl">
+        <p className="text-base line-clamp-6 sm:text-lg">
           Most popular trekking in Ladakh for travellers from around the world.
         </p>
       </div>
@@ -38,7 +38,9 @@ const TrekkingInLadakh = () => {
               <p className="font-bold dark:text-accentDark">{item.title}</p>
             </Link>
             <p className="">Difficulty Level: {item.grade}</p>
-            <p className="font-light text-sm">Best time: {item.bestTime}</p>
+            <p className="font-light text-base line-clamp-6 sm:text-lg">
+              Best time: {item.bestTime}
+            </p>
           </div>
         ))}
       </article>
