@@ -6,6 +6,7 @@ export const metadata = {
 
 import { allItineraries } from "contentlayer/generated";
 import HomeCover from "../components/Home/HomeCover";
+import Introduction from "../components/Home/Introduction";
 import Featured from "../components/Home/Featured";
 import LatestItinerary from "../components/Home/LatestItinerary";
 import Adventure from "../components/Home/Adventure";
@@ -15,6 +16,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center">
       <HomeCover itineraries={allItineraries} />
+      <Introduction />
       <TrekkingInLadakh itineraries={allItineraries} />
       <Featured itineraries={allItineraries} />
       <LatestItinerary itineraries={allItineraries} />

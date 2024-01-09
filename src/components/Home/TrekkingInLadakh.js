@@ -17,7 +17,7 @@ const TrekkingInLadakh = () => {
   return (
     <section className="overflow-hidden w-full mt-16 sm:mt-24 md:mt-32 px-5 sm:px-10 md:px-24 sxl:px-32 flex flex-col items-center justify-center text-dark dark:text-light">
       <div className="w-full inline-block overflow-hidden hide-scroll-bar">
-        <h2 className="w-full inline-block font-bold capitalize text-2xl md:text-4xl ">
+        <h2 className="w-full inline-block font-bold capitalize text-2xl md:text-4xl mb-3">
           Trekking in Ladakh
         </h2>
         <p className="font-normal text-lg md:text-2xl">

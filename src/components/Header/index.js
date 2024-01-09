@@ -100,7 +100,7 @@ export default function Header() {
                   {mode === "light" ? (
                     <MoonIcon className={"fill-dark"} />
                   ) : (
-                    <SunIcon className={"fill-light"} />
+                    <SunIcon className={"fill-softBg"} />
                   )}
                 </button>
               </div>

@@ -36,19 +36,19 @@ body::-webkit-scrollbar-track {
 
 /* Handle */
 body::-webkit-scrollbar-thumb {
-  background: #f97316;
+  background: #b5714c;
   border-radius: 2px;
 }
 
 /* Handle on hover */
 body::-webkit-scrollbar-thumb:hover {
-  background: #ea580c;
+  background: #b5714c;
 }
 
 /* Standard scrollbar styles */
 body {
   scrollbar-width: thin;
-  scrollbar-color: #f97316 #999;
+  scrollbar-color: #b5714c #999;
 }
 
 body::-webkit-scrollbar {
@@ -60,7 +60,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #f97316;
+  background-color: #b5714c;
 }
 
 * {
