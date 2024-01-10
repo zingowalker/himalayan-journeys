@@ -92,7 +92,7 @@ export default function Header() {
                   className={cx(
                     "relative  w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1 focus:outline-none focus:ring-2 dark:focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800",
                     mode === "light"
-                      ? "bg-softBg text-dark"
+                      ? "bg-light text-dark"
                       : "bg-dark text-light"
                   )}
                   aria-label="theme-switcher"
@@ -100,7 +100,7 @@ export default function Header() {
                   {mode === "light" ? (
                     <MoonIcon className={"fill-dark"} />
                   ) : (
-                    <SunIcon className={"fill-softBg"} />
+                    <SunIcon className={"fill-light"} />
                   )}
                 </button>
               </div>

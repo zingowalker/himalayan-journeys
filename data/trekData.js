@@ -3,7 +3,7 @@ export const trekData = [
     id: 1,
     src: "/tours/markha.png",
     title: "Markha valley trek 4N/3D",
-    url: "/itineraries/markha-trek-from-chilling",
+    url: "/itineraries/markha-trek-from-skyu",
     grade: "3",
     bestTime: "Mid-May to beginning of Oct",
   },
