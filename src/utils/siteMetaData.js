@@ -13,7 +13,7 @@ const siteMetadata = {
   instagram: "https://www.instagram.com/ecoindiajourneys/",
   facebook: "https://www.facebook.com/voyageecoindia/",
   linkedin: "https://www.linkedin.com/in/eco-india-journeys-a756b7a4/",
-  twitter: "https://twitter.com/eco_journeys?lang=en",
+  twitter: "https://twitter.com/ecoindia2023",
   locale: "en-US",
 };
 
