@@ -13,13 +13,13 @@ const Featured = ({ itineraries }) => {
 
       <div className="grid grid-cols-2 grid-rows-2 gap-6  mt-10 sm:mt-16">
         <article className=" col-span-2  sxl:col-span-1 row-span-2 relative">
-          <ItineraryLayoutOne itinerary={sortedItineraries[1]} />
-        </article>
-        <article className="col-span-2 sm:col-span-1 row-span-1 relative">
-          <ItineraryLayoutTwo itinerary={sortedItineraries[2]} />
+          <ItineraryLayoutOne itinerary={sortedItineraries[2]} />
         </article>
         <article className="col-span-2 sm:col-span-1 row-span-1 relative">
           <ItineraryLayoutTwo itinerary={sortedItineraries[3]} />
+        </article>
+        <article className="col-span-2 sm:col-span-1 row-span-1 relative">
+          <ItineraryLayoutTwo itinerary={sortedItineraries[4]} />
         </article>
       </div>
     </section>
