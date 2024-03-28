@@ -11,7 +11,7 @@ module.exports = {
         // dark: "#0f172a",
         dark: "rgb(20, 20, 20, 1)",
         // light: "#a8a29e",
-        light: "#fff",
+        light: "rgb(252, 241, 230, 1)",
         accent: "#a16207",
         accentDark: "#ffdb4d",
         gray: "#747474",
