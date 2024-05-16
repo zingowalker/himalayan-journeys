@@ -44,11 +44,7 @@ export default function Header() {
 
   return (
     <Disclosure
-      as="nav"
-      className={`w-full text-softBg fixed top-0 left-0 right-0 z-50 transition-all ease-in delay-500 font-bold ${
-        scrolled ? "bg-sky-900" : "bg-transparent"
-      }`}
-    >
+      as="nav" className="w-full fixed top-0 left-0 right-0 z-50 font-bold bg-softBg">
       {({ open }) => (
         <>
           <div className="w-full px-2 sm:px-6 lg:px-8">
@@ -74,8 +70,8 @@ export default function Header() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? "text-white" : "hover:underline",
-                          "rounded-md px-4 py-2 capital"
+                          item.current ? "text-[#84cc16]" : "hover:underline",
+                          "rounded-md px-4 py-2 uppercase text-bold"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -115,7 +111,7 @@ export default function Header() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? "text-white" : "hover:underline",
+                    item.current ? "text-[#84cc16]" : "hover:underline",
                     "block rounded-md px-3 py-2 "
                   )}
                   aria-current={item.current ? "page" : undefined}

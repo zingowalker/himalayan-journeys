@@ -16,7 +16,7 @@ const Logo = () => {
       </div>
       <p className="font-extrabold text-sm uppercase">
         <span className="text-[#84cc16]">Eco</span>
-        <span className="text-white"> India</span>
+        <span className="text-black"> India</span>
         <span className="text-orange-500"> Journeys</span>
       </p>
     </Link>
