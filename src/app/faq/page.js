@@ -6,8 +6,8 @@ export const metadata = {
 
 export default function FaqPage() {
   return (
-    <main>
+    <section className="flex justify-center items-center">
       <Faq />
-    </main>
+    </section>
   );
 }
